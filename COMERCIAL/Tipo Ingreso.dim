@@ -1,0 +1,958 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="44b6f265-31a1-4b8c-bf23-435c45b0231b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tipo Ingreso</ID>
+  <Name>Tipo Ingreso</Name>
+  <CreatedTimestamp>2022-12-02T00:58:31.41Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-03-01T00:45:54.34Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3102" scrolltop="-9486" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7435" y="13123" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_TIPO_INGRESO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4101" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000005100000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="COM_TD_TIPO_INGRESO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3102</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9486</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2023-04-13T09:21:36.893333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bbaab190-bfdc-48ce-b039-c7738c5c843e">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="d1db0df6-c172-4382-a9bb-0507f9add6cb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="b606ec0d-1642-4da1-b9de-3572cff10249">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2022-12-02T00:58:31.51Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.5Z</LastSchemaUpdate>
+      <RoleID>Role 50</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="05930a05-6b4e-48a5-a961-e6277f20b96d">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2022-12-02T00:58:31.69Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.51Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="221c1859-a9b8-49d0-a376-e3b37845d8c9">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>2022-12-02T00:58:31.823333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.52Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e692f2d1-3069-4ff5-b125-932ddbab40f3">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.006667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.53Z</LastSchemaUpdate>
+      <RoleID>Role 10</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="1ab52c79-efc1-4e34-bc62-e013e416783d">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.103333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.54Z</LastSchemaUpdate>
+      <RoleID>Role 11</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ac64deb0-e42d-40b6-a8b4-0d499f36cca1">
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.223333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.55Z</LastSchemaUpdate>
+      <RoleID>Role 15</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="72687da9-7685-480e-943e-fab8d1979894">
+      <ID>DimensionPermission 6</ID>
+      <Name>DimensionPermission 6</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.436667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.556667Z</LastSchemaUpdate>
+      <RoleID>Role 39</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="4887f94e-2c98-41a6-9e08-1ad9b088768a">
+      <ID>DimensionPermission 7</ID>
+      <Name>DimensionPermission 7</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.57Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.566667Z</LastSchemaUpdate>
+      <RoleID>Role 42</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="bafd0d96-b324-4c87-9ae4-f3351c02f4a5">
+      <ID>DimensionPermission 8</ID>
+      <Name>DimensionPermission 8</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.723333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.576667Z</LastSchemaUpdate>
+      <RoleID>Role 66</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e309055f-778c-423a-9c39-45a907e8039f">
+      <ID>DimensionPermission 9</ID>
+      <Name>DimensionPermission 9</Name>
+      <CreatedTimestamp>2022-12-02T00:58:32.916667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.586667Z</LastSchemaUpdate>
+      <RoleID>Role 123</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="6cb7d4e6-ef3f-4366-a29d-a9f2fe81d304">
+      <ID>DimensionPermission 10</ID>
+      <Name>DimensionPermission 10</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.063333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.596667Z</LastSchemaUpdate>
+      <RoleID>Role 22</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="24baf9f2-408f-4c33-a1dc-8872d4c9bc74">
+      <ID>DimensionPermission 11</ID>
+      <Name>DimensionPermission 11</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.173333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.606667Z</LastSchemaUpdate>
+      <RoleID>Role 79</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9e783c0d-3eb7-48b5-83e5-c44eaddaa94a">
+      <ID>DimensionPermission 12</ID>
+      <Name>DimensionPermission 12</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.306667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.616667Z</LastSchemaUpdate>
+      <RoleID>Role 81</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ceae8400-c25a-44ed-8702-6e27c6b09bc0">
+      <ID>DimensionPermission 13</ID>
+      <Name>DimensionPermission 13</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.473333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.626667Z</LastSchemaUpdate>
+      <RoleID>Role 533</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="4f56336c-7120-4f5f-a071-e6f142be30e3">
+      <ID>DimensionPermission 14</ID>
+      <Name>DimensionPermission 14</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.576667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.636667Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="aa200c5a-3dda-40c1-8bc4-7d3ecd0518dc">
+      <ID>DimensionPermission 15</ID>
+      <Name>DimensionPermission 15</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.64Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.646667Z</LastSchemaUpdate>
+      <RoleID>Role 544</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="46841af8-246e-478f-b746-466999c18e33">
+      <ID>DimensionPermission 16</ID>
+      <Name>DimensionPermission 16</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.736667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.653333Z</LastSchemaUpdate>
+      <RoleID>Role 548</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c328ec10-6bef-4840-9670-937937dc5d00">
+      <ID>DimensionPermission 19</ID>
+      <Name>DimensionPermission 19</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.833333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.663333Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="31d7b6eb-93bd-4919-8ef5-83136093a0b9">
+      <ID>DimensionPermission 21</ID>
+      <Name>DimensionPermission 21</Name>
+      <CreatedTimestamp>2022-12-02T00:58:33.966667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.673333Z</LastSchemaUpdate>
+      <RoleID>Role 25</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3177bc57-5d80-41c0-b8de-7930e98a5808">
+      <ID>DimensionPermission 23</ID>
+      <Name>DimensionPermission 23</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.05Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.683333Z</LastSchemaUpdate>
+      <RoleID>Role 26</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="964164ef-786d-43f0-a730-4483e4f594cb">
+      <ID>DimensionPermission 25</ID>
+      <Name>DimensionPermission 25</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.156667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.69Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="cfac29e1-851c-4177-9bac-71549e52e1ef">
+      <ID>DimensionPermission 26</ID>
+      <Name>DimensionPermission 26</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.29Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.7Z</LastSchemaUpdate>
+      <RoleID>Role 30</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="2e95cc42-ceb4-4269-8bed-694d0dd59991">
+      <ID>DimensionPermission 27</ID>
+      <Name>DimensionPermission 27</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.396667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.71Z</LastSchemaUpdate>
+      <RoleID>Role 35</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="88bd644d-da93-482a-a8d3-4b9da34b7487">
+      <ID>DimensionPermission 28</ID>
+      <Name>DimensionPermission 28</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.45Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.72Z</LastSchemaUpdate>
+      <RoleID>Role 46</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="61a8b101-8a01-4735-bc62-458f95dc3d8f">
+      <ID>DimensionPermission 29</ID>
+      <Name>DimensionPermission 29</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.53Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.73Z</LastSchemaUpdate>
+      <RoleID>Role 18</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8acf38c6-a050-4044-a335-b992005ec4d6">
+      <ID>DimensionPermission 30</ID>
+      <Name>DimensionPermission 30</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.623333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.74Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="d402f9aa-0bb7-4032-b0d2-7ae4bfffb2e4">
+      <ID>DimensionPermission 31</ID>
+      <Name>DimensionPermission 31</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.713333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.75Z</LastSchemaUpdate>
+      <RoleID>Role 84</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="38e270c0-525b-4f21-9e17-e9189b48f838">
+      <ID>DimensionPermission 32</ID>
+      <Name>DimensionPermission 32</Name>
+      <CreatedTimestamp>2022-12-02T00:58:34.99Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.756667Z</LastSchemaUpdate>
+      <RoleID>Role 121</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0acda5a2-250f-4762-b76b-1685859af4ec">
+      <ID>DimensionPermission 33</ID>
+      <Name>DimensionPermission 33</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.216667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.766667Z</LastSchemaUpdate>
+      <RoleID>Role 127</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="748f146e-b719-4882-bd10-e6c428762347">
+      <ID>DimensionPermission 34</ID>
+      <Name>DimensionPermission 34</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.42Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.776667Z</LastSchemaUpdate>
+      <RoleID>Role 128</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="01bbab19-8237-4762-a452-c1e876da8900">
+      <ID>DimensionPermission 35</ID>
+      <Name>DimensionPermission 35</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.516667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.786667Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a22152d3-d4f9-4102-b02f-41a0e267fc20">
+      <ID>DimensionPermission 36</ID>
+      <Name>DimensionPermission 36</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.623333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.796667Z</LastSchemaUpdate>
+      <RoleID>Role 058</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ac404040-1678-4ee4-85a3-d85d4f6cbdfa">
+      <ID>DimensionPermission 37</ID>
+      <Name>DimensionPermission 37</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.743333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.806667Z</LastSchemaUpdate>
+      <RoleID>Role 68</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="81affd66-8c9f-4292-84ec-6795cf6c2859">
+      <ID>DimensionPermission 38</ID>
+      <Name>DimensionPermission 38</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.85Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.82Z</LastSchemaUpdate>
+      <RoleID>Role 92</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="5f9f38af-9259-4105-8532-e37d658153af">
+      <ID>DimensionPermission 39</ID>
+      <Name>DimensionPermission 39</Name>
+      <CreatedTimestamp>2022-12-02T00:58:35.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.833333Z</LastSchemaUpdate>
+      <RoleID>Role 105</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0a5d8242-efe6-4982-9a7b-ce6c8af7481b">
+      <ID>DimensionPermission 40</ID>
+      <Name>DimensionPermission 40</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.143333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.843333Z</LastSchemaUpdate>
+      <RoleID>Role 146</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="dfddf626-5ce5-4291-b38d-5a2cccf71e54">
+      <ID>DimensionPermission 41</ID>
+      <Name>DimensionPermission 41</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.226667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.856667Z</LastSchemaUpdate>
+      <RoleID>Role 320</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8d50de62-07cc-442f-8757-15b3f0027d3d">
+      <ID>DimensionPermission 42</ID>
+      <Name>DimensionPermission 42</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.38Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.866667Z</LastSchemaUpdate>
+      <RoleID>Role 52</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="630dbe41-0d77-4019-80c2-184f7d8403d8">
+      <ID>DimensionPermission 43</ID>
+      <Name>DimensionPermission 43</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.493333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.88Z</LastSchemaUpdate>
+      <RoleID>Role 53</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c34ab533-6762-46f3-bd9e-3e9fdf97ab83">
+      <ID>DimensionPermission 44</ID>
+      <Name>DimensionPermission 44</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.66Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.893333Z</LastSchemaUpdate>
+      <RoleID>Role 58</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="5105aefa-4951-4b45-aa59-e1cf953609cb">
+      <ID>DimensionPermission 45</ID>
+      <Name>DimensionPermission 45</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.773333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.903333Z</LastSchemaUpdate>
+      <RoleID>Role 33</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="dadc0e6c-4033-47ed-aef3-9d78b1f78732">
+      <ID>DimensionPermission 46</ID>
+      <Name>DimensionPermission 46</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.853333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.916667Z</LastSchemaUpdate>
+      <RoleID>Role 61</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="91b6e04a-7423-4e2c-a603-0a603727b9a1">
+      <ID>DimensionPermission 47</ID>
+      <Name>DimensionPermission 47</Name>
+      <CreatedTimestamp>2022-12-02T00:58:36.976667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.93Z</LastSchemaUpdate>
+      <RoleID>Role 64</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="40a0e34c-ccc6-4ac3-94b8-e29ff6f79b6f">
+      <ID>DimensionPermission 48</ID>
+      <Name>DimensionPermission 48</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.08Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.943333Z</LastSchemaUpdate>
+      <RoleID>Role 76</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0be9e4e3-d956-424b-abb0-060f59cf6dc6">
+      <ID>DimensionPermission 49</ID>
+      <Name>DimensionPermission 49</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.216667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.956667Z</LastSchemaUpdate>
+      <RoleID>Role 78</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="cf821de1-a99d-48e0-be29-086e116ee1b8">
+      <ID>DimensionPermission 52</ID>
+      <Name>DimensionPermission 52</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.343333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.966667Z</LastSchemaUpdate>
+      <RoleID>Role 47</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="2f2a37ac-616b-4114-9abe-8aaa3fa51d85">
+      <ID>DimensionPermission 53</ID>
+      <Name>DimensionPermission 53</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.44Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.983333Z</LastSchemaUpdate>
+      <RoleID>Role 99</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ca370f71-a4b4-426d-bfb3-e1c983a307a7">
+      <ID>DimensionPermission 20</ID>
+      <Name>DimensionPermission 20</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.583333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:54.993333Z</LastSchemaUpdate>
+      <RoleID>Role 24</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="2370a21c-c717-4b86-bcf6-3e14cc253563">
+      <ID>DimensionPermission 51</ID>
+      <Name>DimensionPermission 51</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.793333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.006667Z</LastSchemaUpdate>
+      <RoleID>Role 101</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="31af03e8-14c8-41b7-96ee-86b8d67f898e">
+      <ID>DimensionPermission 50</ID>
+      <Name>DimensionPermission 50</Name>
+      <CreatedTimestamp>2022-12-02T00:58:37.936667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.016667Z</LastSchemaUpdate>
+      <RoleID>Role 85</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ba0de778-03c6-472d-8a2c-1bd6636ced5e">
+      <ID>DimensionPermission 54</ID>
+      <Name>DimensionPermission 54</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.093333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.03Z</LastSchemaUpdate>
+      <RoleID>Role 106</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="2fd29724-bcaa-43f8-9af5-eafc707a59ad">
+      <ID>DimensionPermission 55</ID>
+      <Name>DimensionPermission 55</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.243333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.043333Z</LastSchemaUpdate>
+      <RoleID>Role 107</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="db724e62-3c68-4f55-b56c-ad72a99780c7">
+      <ID>DimensionPermission 56</ID>
+      <Name>DimensionPermission 56</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.413333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.056667Z</LastSchemaUpdate>
+      <RoleID>Role 113</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="60319f92-e93e-4dd8-910c-76d999e4da45">
+      <ID>DimensionPermission 57</ID>
+      <Name>DimensionPermission 57</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.546667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.066667Z</LastSchemaUpdate>
+      <RoleID>Role 114</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="5d5840e0-8867-4b6e-bb94-7462a12ed183">
+      <ID>DimensionPermission 58</ID>
+      <Name>DimensionPermission 58</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.643333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.08Z</LastSchemaUpdate>
+      <RoleID>Role 117</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9af0be28-cfcf-4259-9ba9-4ccb36adba06">
+      <ID>DimensionPermission 59</ID>
+      <Name>DimensionPermission 59</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.723333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.09Z</LastSchemaUpdate>
+      <RoleID>Role 125</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ea676810-ed8e-47c7-ba3d-e10c985b8d6e">
+      <ID>DimensionPermission 60</ID>
+      <Name>DimensionPermission 60</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.833333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.103333Z</LastSchemaUpdate>
+      <RoleID>Role 130</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e9fb79a5-6f61-4965-a38e-ba383731e6e3">
+      <ID>DimensionPermission 61</ID>
+      <Name>DimensionPermission 61</Name>
+      <CreatedTimestamp>2022-12-02T00:58:38.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.116667Z</LastSchemaUpdate>
+      <RoleID>Role 133</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c1ec0e8c-d2f8-459f-abfb-514b61f7a7bf">
+      <ID>DimensionPermission 62</ID>
+      <Name>DimensionPermission 62</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.063333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.126667Z</LastSchemaUpdate>
+      <RoleID>Role 135</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c7130344-f783-4a99-9f3c-bd349688cf7b">
+      <ID>DimensionPermission 63</ID>
+      <Name>DimensionPermission 63</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.156667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.14Z</LastSchemaUpdate>
+      <RoleID>Role 138</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="1915c838-5036-41e8-bae9-1d63a14da21b">
+      <ID>DimensionPermission 64</ID>
+      <Name>DimensionPermission 64</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.233333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.153333Z</LastSchemaUpdate>
+      <RoleID>Role 139</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="743ee49b-dd45-456d-94df-af491f19f307">
+      <ID>DimensionPermission 24</ID>
+      <Name>DimensionPermission 24</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.346667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.163333Z</LastSchemaUpdate>
+      <RoleID>Role 144</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="841af063-eb65-47d7-9f83-9592f0391096">
+      <ID>DimensionPermission 65</ID>
+      <Name>DimensionPermission 65</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.443333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.176667Z</LastSchemaUpdate>
+      <RoleID>Role 147</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e7c33c46-a062-4ff7-99cc-612d344dcc4b">
+      <ID>DimensionPermission 66</ID>
+      <Name>DimensionPermission 66</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.533333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.19Z</LastSchemaUpdate>
+      <RoleID>Role 150</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c21868e5-ede1-408d-87db-5478a2aa43b9">
+      <ID>DimensionPermission 67</ID>
+      <Name>DimensionPermission 67</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.693333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.203333Z</LastSchemaUpdate>
+      <RoleID>Role 157</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3efebaee-75a7-4602-a0e3-8e15e1e4ad40">
+      <ID>DimensionPermission 68</ID>
+      <Name>DimensionPermission 68</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.773333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.216667Z</LastSchemaUpdate>
+      <RoleID>Role 158</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ee15a965-0f31-4fb8-808b-af1041535910">
+      <ID>DimensionPermission 69</ID>
+      <Name>DimensionPermission 69</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.826667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.23Z</LastSchemaUpdate>
+      <RoleID>Role 45</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="684dd58a-e845-413a-814a-0b5c329aaa87">
+      <ID>DimensionPermission 70</ID>
+      <Name>DimensionPermission 70</Name>
+      <CreatedTimestamp>2022-12-02T00:58:39.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.243333Z</LastSchemaUpdate>
+      <RoleID>Role 160</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="32de51cd-558b-4baa-bc73-5526efa46194">
+      <ID>DimensionPermission 71</ID>
+      <Name>DimensionPermission 71</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.146667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.256667Z</LastSchemaUpdate>
+      <RoleID>Role 161</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3bde6086-8549-4696-a1b5-8e27e9e241d2">
+      <ID>DimensionPermission 73</ID>
+      <Name>DimensionPermission 73</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.28Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.27Z</LastSchemaUpdate>
+      <RoleID>Role 162</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="53bd1159-9e5b-4119-91c8-d35ad0de8bd1">
+      <ID>DimensionPermission 74</ID>
+      <Name>DimensionPermission 74</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.373333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.283333Z</LastSchemaUpdate>
+      <RoleID>Role 163</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e7d1d43d-4e02-4712-9d9a-a2aba8a6b97c">
+      <ID>DimensionPermission 75</ID>
+      <Name>DimensionPermission 75</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.48Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.296667Z</LastSchemaUpdate>
+      <RoleID>Role 164</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="000fe202-23ac-4119-b198-5af95d173dac">
+      <ID>DimensionPermission 76</ID>
+      <Name>DimensionPermission 76</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.63Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.31Z</LastSchemaUpdate>
+      <RoleID>Role 165</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="583d3081-ab45-45e8-b78f-3dc4a695aa9a">
+      <ID>DimensionPermission 77</ID>
+      <Name>DimensionPermission 77</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.766667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.323333Z</LastSchemaUpdate>
+      <RoleID>Role 166</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c8cf83dd-6762-4b94-922a-ff260913d07f">
+      <ID>DimensionPermission 78</ID>
+      <Name>DimensionPermission 78</Name>
+      <CreatedTimestamp>2022-12-02T00:58:40.84Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.336667Z</LastSchemaUpdate>
+      <RoleID>Role 167</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8b73e8c6-6c11-4f1a-a2bd-7a20a557f7ca">
+      <ID>DimensionPermission 79</ID>
+      <Name>DimensionPermission 79</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.346667Z</LastSchemaUpdate>
+      <RoleID>Role 90</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="2c08f667-1469-45e7-9d23-f26ad599d7ba">
+      <ID>DimensionPermission 72</ID>
+      <Name>DimensionPermission 72</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41.153333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.36Z</LastSchemaUpdate>
+      <RoleID>Role 98</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="f36942f9-6f71-4d62-aa34-064a6f9bf39f">
+      <ID>DimensionPermission 81</ID>
+      <Name>DimensionPermission 81</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41.376667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.373333Z</LastSchemaUpdate>
+      <RoleID>Role 170</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8243dff9-50dc-4bd4-821c-8f86a760bc90">
+      <ID>DimensionPermission 82</ID>
+      <Name>DimensionPermission 82</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41.633333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.386667Z</LastSchemaUpdate>
+      <RoleID>Role 67</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="68546b7a-4f73-40b3-bf26-42e6dcc4db48">
+      <ID>DimensionPermission 83</ID>
+      <Name>DimensionPermission 83</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41.783333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.4Z</LastSchemaUpdate>
+      <RoleID>Role 63</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="bfee1b98-c1cf-47f3-8434-6bf40ba4c59d">
+      <ID>DimensionPermission 17</ID>
+      <Name>DimensionPermission 17</Name>
+      <CreatedTimestamp>2022-12-02T00:58:41.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.413333Z</LastSchemaUpdate>
+      <RoleID>Role 184</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9fb80416-99c7-48fb-ab46-b8201b936295">
+      <ID>DimensionPermission 18</ID>
+      <Name>DimensionPermission 18</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.133333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.426667Z</LastSchemaUpdate>
+      <RoleID>Role 169</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="7d8119dd-3716-44f9-87fa-03c9bc165168">
+      <ID>DimensionPermission 80</ID>
+      <Name>DimensionPermission 80</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.313333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.44Z</LastSchemaUpdate>
+      <RoleID>Role 187</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9aeb9b51-51c3-492c-bc21-ae9395754e86">
+      <ID>DimensionPermission 84</ID>
+      <Name>DimensionPermission 84</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.45Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.453333Z</LastSchemaUpdate>
+      <RoleID>Role 188</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="6a304186-553d-4198-ae45-9c9df614a96b">
+      <ID>DimensionPermission 85</ID>
+      <Name>DimensionPermission 85</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.563333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.466667Z</LastSchemaUpdate>
+      <RoleID>Role 189</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="633e4304-c9cf-4c09-ba49-5254f54bcb18">
+      <ID>DimensionPermission 86</ID>
+      <Name>DimensionPermission 86</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.676667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.476667Z</LastSchemaUpdate>
+      <RoleID>Role 190</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9d7d7053-d635-46e7-a071-a49ee95772c0">
+      <ID>DimensionPermission 87</ID>
+      <Name>DimensionPermission 87</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.766667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.49Z</LastSchemaUpdate>
+      <RoleID>Role 191</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9d48909e-bb59-414d-8403-3368eda206ec">
+      <ID>DimensionPermission 88</ID>
+      <Name>DimensionPermission 88</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.9Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.503333Z</LastSchemaUpdate>
+      <RoleID>Role 192</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="65909139-eb12-42cd-9cca-81684fa86df6">
+      <ID>DimensionPermission 89</ID>
+      <Name>DimensionPermission 89</Name>
+      <CreatedTimestamp>2022-12-02T00:58:42.976667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.52Z</LastSchemaUpdate>
+      <RoleID>Role 193</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="31631f1f-6ce8-4a32-bbfc-8e04af046d39">
+      <ID>DimensionPermission 90</ID>
+      <Name>DimensionPermission 90</Name>
+      <CreatedTimestamp>2022-12-02T00:58:43.083333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.533333Z</LastSchemaUpdate>
+      <RoleID>Role 194</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ad9e89cc-a51f-4d06-b36b-f9f475a4d036">
+      <ID>DimensionPermission 91</ID>
+      <Name>DimensionPermission 91</Name>
+      <CreatedTimestamp>2022-12-02T00:58:43.243333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.543333Z</LastSchemaUpdate>
+      <RoleID>Role 195</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="bde25281-b432-4a26-8a5a-84070496cc41">
+      <ID>DimensionPermission 92</ID>
+      <Name>DimensionPermission 92</Name>
+      <CreatedTimestamp>2022-12-02T00:58:43.346667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.556667Z</LastSchemaUpdate>
+      <RoleID>Role 196</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0f2192f8-b55a-4ab4-8a24-6df06976e383">
+      <ID>DimensionPermission 93</ID>
+      <Name>DimensionPermission 93</Name>
+      <CreatedTimestamp>2022-12-02T00:58:43.446667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.566667Z</LastSchemaUpdate>
+      <RoleID>Role 197</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="4921b12a-1b7e-47d5-81b2-0710cb0bb663">
+      <ID>DimensionPermission 22</ID>
+      <Name>DimensionPermission 22</Name>
+      <CreatedTimestamp>2022-12-02T00:58:43.533333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.58Z</LastSchemaUpdate>
+      <RoleID>Role 17</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="7f7bb401-148c-41ca-9d35-4e85885fc7df">
+      <ID>DimensionPermission 94</ID>
+      <Name>DimensionPermission 94</Name>
+      <CreatedTimestamp>2022-12-09T15:56:42.763333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:55.593333Z</LastSchemaUpdate>
+      <RoleID>Role 171</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="b5a1db31-d943-4206-851a-602a660bf928">
+      <ID>ID TIPO INGRESO</ID>
+      <Name>ID TIPO INGRESO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b900902-4935-4fdb-8a66-3a8336a51fba">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2c2a18b-aa85-4019-83a5-b26f98733aca">
+            <TableID>COM_TD_TIPO_INGRESO</TableID>
+            <ColumnID>ID_TIPO_INGRESO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="10f122e6-f96d-4ce1-b9b1-5fe28b4e9e1e">
+        <DataType>WChar</DataType>
+        <NullProcessing>ZeroOrBlank</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="86f56c02-d252-46ed-8095-ea13a7812329">
+          <TableID>COM_TD_TIPO_INGRESO</TableID>
+          <ColumnID>ID_TIPO_INGRESO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a63b85a1-b795-4eee-9620-a78b955577a3">
+          <AttributeID>COD TIPO INGRESO</AttributeID>
+          <Name>COD TIPO INGRESO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3daeb977-43af-4c6f-bd03-3a538d459c24">
+          <AttributeID>DES TIPO INGRESO</AttributeID>
+          <Name>DES TIPO INGRESO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a6d95170-badc-4810-8b49-7605e7a1327b">
+      <ID>COD TIPO INGRESO</ID>
+      <Name>COD TIPO INGRESO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80b7377d-07c3-4494-a589-3a562ae25368">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62d84e26-0e72-478e-9a22-96f14918f487">
+            <TableID>COM_TD_TIPO_INGRESO</TableID>
+            <ColumnID>COD_TIPO_INGRESO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="70fde8f8-0c0e-4866-abe4-e87c42a81d64">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bac4ce6b-76d0-4b39-aa2e-c039f2d453a4">
+          <TableID>COM_TD_TIPO_INGRESO</TableID>
+          <ColumnID>COD_TIPO_INGRESO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3cf469ba-84a4-4f34-9040-d09728f7b7dc">
+      <ID>DES TIPO INGRESO</ID>
+      <Name>DES TIPO INGRESO</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="195612f0-aa8b-429f-8c99-1a1a555578ba">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="015495d7-ff50-474c-bd73-482a2aef680f">
+            <TableID>COM_TD_TIPO_INGRESO</TableID>
+            <ColumnID>DES_TIPO_INGRESO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1a008c8a-e8a3-483d-9b42-639f6217a8b5">
+        <DataType>WChar</DataType>
+        <DataSize>55</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5e3fe140-f3d4-4e5c-b457-79afbc6443e1">
+          <TableID>COM_TD_TIPO_INGRESO</TableID>
+          <ColumnID>DES_TIPO_INGRESO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="229fefb2-6ca3-41e1-844a-71d2cd3cbe1c">
+      <ID>Hierarchy</ID>
+      <Name>Tipo Ingreso</Name>
+      <Levels>
+        <Level dwd:design-time-name="80a3d61f-687c-45f0-93f6-88d2c23fd3c2">
+          <ID>DES TIPO INGRESO</ID>
+          <Name>Tipo Ingreso</Name>
+          <SourceAttributeID>DES TIPO INGRESO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="fbbe19fb-a290-479a-9572-8f359a207b4c">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="55d770ad-3de2-41b8-b882-8b050187fe0c" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

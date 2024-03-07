@@ -1,0 +1,2566 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TD ARTICULO INV</ID>
+  <Name>Artículo Inventarios</Name>
+  <CreatedTimestamp>2022-12-02T00:43:01.676667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-03-02T17:47:03.68Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1713" scrolltop="6021" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11774" y="21378" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_ARTICULO_INV" left="20" top="-6535" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6509" height="29474" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006d19000022730000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="INV_TD_ARTICULO_INV" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1713</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>6021</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6535</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="259">
+            <Shape Id="ID ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID ARTICULO" />
+                <Attribute Id="CANTIDAD DIAS NUEVO" />
+                <Attribute Id="CANTIDAD PEDIDA VAR" />
+                <Attribute Id="CLASE PRODUCTO" />
+                <Attribute Id="CLASIFICACION" />
+                <Attribute Id="COD ARTICULO" />
+                <Attribute Id="CODIGO ARTICULO SUSTITUTO" />
+                <Attribute Id="ID COMPANIA" />
+                <Attribute Id="CONDICION REABASTECIMIENTO" />
+                <Attribute Id="COSTO DOLARES 1" />
+                <Attribute Id="DES MODELO ARTICULO" />
+                <Attribute Id="DIAS REABASTECIMIENTO" />
+                <Attribute Id="FECHA HASTA CUANDO DISTRIBUYE" />
+                <Attribute Id="FECHA ULTIMA COMPRA" />
+                <Attribute Id="FECHA ULTIMO COSTO" />
+                <Attribute Id="GARANTIA" />
+                <Attribute Id="IND ACTIVO" />
+                <Attribute Id="IND COMPRA TIENDA" />
+                <Attribute Id="IND FACIL MANEJO" />
+                <Attribute Id="IND IMPORTADO" />
+                <Attribute Id="IND TIPO IMPUESTO" />
+                <Attribute Id="IND LOTE" />
+                <Attribute Id="IND REGALIA" />
+                <Attribute Id="IND DISTRIBUCION" />
+                <Attribute Id="IND FACTURA ASISTENCIA" />
+                <Attribute Id="IND FACTURA EXTRAGARANTIA" />
+                <Attribute Id="IND PERMITE EXTRAGARANTIA" />
+                <Attribute Id="IND REQUIERE SERIE" />
+                <Attribute Id="IND SOLICITA SERIE" />
+                <Attribute Id="IND SUSPENDIDO" />
+                <Attribute Id="IND IMPUESTO VENTAS" />
+                <Attribute Id="IND VAL CANTIDAD PEDIDO" />
+                <Attribute Id="MARGEN FINAL" />
+                <Attribute Id="MARGEN FINAL GOLFITO" />
+                <Attribute Id="MARGEN INICIAL" />
+                <Attribute Id="MARGEN INICIAL GOLFITO" />
+                <Attribute Id="MARGEN SEGUNDA" />
+                <Attribute Id="MARGEN SEGUNDA GOLFITO" />
+                <Attribute Id="MARGEN UTILIDAD" />
+                <Attribute Id="MARGEN UTILIDAD MINIMA" />
+                <Attribute Id="MAXIMO" />
+                <Attribute Id="MAX MESES EXTRAGARANTIA" />
+                <Attribute Id="MINIMO" />
+                <Attribute Id="MODELO" />
+                <Attribute Id="MOTIVO DISTRIBUCION" />
+                <Attribute Id="MOTIVO SUSPENSION" />
+                <Attribute Id="NOMBRE LARGO" />
+                <Attribute Id="REORDEN" />
+                <Attribute Id="TIPO PRODUCTO" />
+                <Attribute Id="ULTIMO COSTO" />
+                <Attribute Id="ULTIMO COSTO DIGITADO" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="DES MARCA ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="DES MARCA ARTICULO" />
+              </Attributes>
+              <Position x="348" y="20" />
+            </Shape>
+            <Shape Id="DES SEGMENTO ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="DES SEGMENTO ARTICULO" />
+              </Attributes>
+              <Position x="348" y="68" />
+            </Shape>
+            <Shape Id="DES CATEGORIA ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="DES CATEGORIA ARTICULO" />
+              </Attributes>
+              <Position x="348" y="116" />
+            </Shape>
+            <Shape Id="DES CLASE ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="DES CLASE ARTICULO" />
+              </Attributes>
+              <Position x="348" y="164" />
+            </Shape>
+            <Shape Id="DES ARTICULO" Expanded="false">
+              <Attributes>
+                <Attribute Id="DES ARTICULO" />
+              </Attributes>
+              <Position x="348" y="212" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2023-04-13T10:16:59.63Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission>
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2022-12-02T00:43:01.806667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.213333Z</LastSchemaUpdate>
+      <RoleID>Role 544</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2022-12-02T00:43:01.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.25Z</LastSchemaUpdate>
+      <RoleID>Role 548</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.15Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.29Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 6</ID>
+      <Name>DimensionPermission 6</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.373333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.326667Z</LastSchemaUpdate>
+      <RoleID>Role 25</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 8</ID>
+      <Name>DimensionPermission 8</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.536667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.37Z</LastSchemaUpdate>
+      <RoleID>Role 26</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 10</ID>
+      <Name>DimensionPermission 10</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.646667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.403333Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 11</ID>
+      <Name>DimensionPermission 11</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.713333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.44Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 12</ID>
+      <Name>DimensionPermission 12</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.766667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.473333Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 13</ID>
+      <Name>DimensionPermission 13</Name>
+      <CreatedTimestamp>2022-12-02T00:43:02.916667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.506667Z</LastSchemaUpdate>
+      <RoleID>Role 30</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 14</ID>
+      <Name>DimensionPermission 14</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.066667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.543333Z</LastSchemaUpdate>
+      <RoleID>Role 35</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 15</ID>
+      <Name>DimensionPermission 15</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.263333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.58Z</LastSchemaUpdate>
+      <RoleID>Role 46</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 16</ID>
+      <Name>DimensionPermission 16</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.37Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.616667Z</LastSchemaUpdate>
+      <RoleID>Role 18</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 17</ID>
+      <Name>DimensionPermission 17</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.503333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.653333Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 18</ID>
+      <Name>DimensionPermission 18</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.636667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.686667Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 19</ID>
+      <Name>DimensionPermission 19</Name>
+      <CreatedTimestamp>2022-12-02T00:43:03.783333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.723333Z</LastSchemaUpdate>
+      <RoleID>Role 84</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 20</ID>
+      <Name>DimensionPermission 20</Name>
+      <CreatedTimestamp>2022-12-02T00:43:04.146667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.76Z</LastSchemaUpdate>
+      <RoleID>Role 121</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 21</ID>
+      <Name>DimensionPermission 21</Name>
+      <CreatedTimestamp>2022-12-02T00:43:04.436667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.806667Z</LastSchemaUpdate>
+      <RoleID>Role 127</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 22</ID>
+      <Name>DimensionPermission 22</Name>
+      <CreatedTimestamp>2022-12-02T00:43:04.596667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.84Z</LastSchemaUpdate>
+      <RoleID>Role 128</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 23</ID>
+      <Name>DimensionPermission 23</Name>
+      <CreatedTimestamp>2022-12-02T00:43:04.74Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.876667Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 24</ID>
+      <Name>DimensionPermission 24</Name>
+      <CreatedTimestamp>2022-12-02T00:43:04.903333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.913333Z</LastSchemaUpdate>
+      <RoleID>Role 058</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 25</ID>
+      <Name>DimensionPermission 25</Name>
+      <CreatedTimestamp>2022-12-02T00:43:05.1Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.946667Z</LastSchemaUpdate>
+      <RoleID>Role 68</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 26</ID>
+      <Name>DimensionPermission 26</Name>
+      <CreatedTimestamp>2022-12-02T00:43:05.453333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:24.98Z</LastSchemaUpdate>
+      <RoleID>Role 92</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 27</ID>
+      <Name>DimensionPermission 27</Name>
+      <CreatedTimestamp>2022-12-02T00:43:05.566667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.016667Z</LastSchemaUpdate>
+      <RoleID>Role 105</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 28</ID>
+      <Name>DimensionPermission 28</Name>
+      <CreatedTimestamp>2022-12-02T00:43:05.713333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.05Z</LastSchemaUpdate>
+      <RoleID>Role 146</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 29</ID>
+      <Name>DimensionPermission 29</Name>
+      <CreatedTimestamp>2022-12-02T00:43:05.866667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.086667Z</LastSchemaUpdate>
+      <RoleID>Role 320</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 30</ID>
+      <Name>DimensionPermission 30</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.053333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.123333Z</LastSchemaUpdate>
+      <RoleID>Role 52</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 31</ID>
+      <Name>DimensionPermission 31</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.253333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.16Z</LastSchemaUpdate>
+      <RoleID>Role 53</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 32</ID>
+      <Name>DimensionPermission 32</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.473333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.196667Z</LastSchemaUpdate>
+      <RoleID>Role 58</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 33</ID>
+      <Name>DimensionPermission 33</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.633333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.233333Z</LastSchemaUpdate>
+      <RoleID>Role 33</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 34</ID>
+      <Name>DimensionPermission 34</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.86Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.27Z</LastSchemaUpdate>
+      <RoleID>Role 61</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 35</ID>
+      <Name>DimensionPermission 35</Name>
+      <CreatedTimestamp>2022-12-02T00:43:06.986667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.303333Z</LastSchemaUpdate>
+      <RoleID>Role 64</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 36</ID>
+      <Name>DimensionPermission 36</Name>
+      <CreatedTimestamp>2022-12-02T00:43:07.15Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.34Z</LastSchemaUpdate>
+      <RoleID>Role 76</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 37</ID>
+      <Name>DimensionPermission 37</Name>
+      <CreatedTimestamp>2022-12-02T00:43:07.25Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.376667Z</LastSchemaUpdate>
+      <RoleID>Role 78</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 40</ID>
+      <Name>DimensionPermission 40</Name>
+      <CreatedTimestamp>2022-12-02T00:43:07.406667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.413333Z</LastSchemaUpdate>
+      <RoleID>Role 47</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 41</ID>
+      <Name>DimensionPermission 41</Name>
+      <CreatedTimestamp>2022-12-02T00:43:07.52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.456667Z</LastSchemaUpdate>
+      <RoleID>Role 99</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>2022-12-02T00:43:07.773333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.503333Z</LastSchemaUpdate>
+      <RoleID>Role 24</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 39</ID>
+      <Name>DimensionPermission 39</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.023333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.566667Z</LastSchemaUpdate>
+      <RoleID>Role 101</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 38</ID>
+      <Name>DimensionPermission 38</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.31Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.606667Z</LastSchemaUpdate>
+      <RoleID>Role 85</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 42</ID>
+      <Name>DimensionPermission 42</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.643333Z</LastSchemaUpdate>
+      <RoleID>Role 106</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 43</ID>
+      <Name>DimensionPermission 43</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.656667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.68Z</LastSchemaUpdate>
+      <RoleID>Role 107</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 44</ID>
+      <Name>DimensionPermission 44</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.796667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.716667Z</LastSchemaUpdate>
+      <RoleID>Role 113</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 45</ID>
+      <Name>DimensionPermission 45</Name>
+      <CreatedTimestamp>2022-12-02T00:43:08.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.753333Z</LastSchemaUpdate>
+      <RoleID>Role 114</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 46</ID>
+      <Name>DimensionPermission 46</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.063333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.79Z</LastSchemaUpdate>
+      <RoleID>Role 117</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 47</ID>
+      <Name>DimensionPermission 47</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.22Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.826667Z</LastSchemaUpdate>
+      <RoleID>Role 125</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 48</ID>
+      <Name>DimensionPermission 48</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.376667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.863333Z</LastSchemaUpdate>
+      <RoleID>Role 130</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 49</ID>
+      <Name>DimensionPermission 49</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.526667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.9Z</LastSchemaUpdate>
+      <RoleID>Role 133</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 50</ID>
+      <Name>DimensionPermission 50</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.686667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.94Z</LastSchemaUpdate>
+      <RoleID>Role 135</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 51</ID>
+      <Name>DimensionPermission 51</Name>
+      <CreatedTimestamp>2022-12-02T00:43:09.92Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:25.976667Z</LastSchemaUpdate>
+      <RoleID>Role 138</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 52</ID>
+      <Name>DimensionPermission 52</Name>
+      <CreatedTimestamp>2022-12-02T00:43:10.093333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.013333Z</LastSchemaUpdate>
+      <RoleID>Role 139</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 9</ID>
+      <Name>DimensionPermission 9</Name>
+      <CreatedTimestamp>2022-12-02T00:43:10.293333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.066667Z</LastSchemaUpdate>
+      <RoleID>Role 144</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 53</ID>
+      <Name>DimensionPermission 53</Name>
+      <CreatedTimestamp>2022-12-02T00:43:10.443333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.103333Z</LastSchemaUpdate>
+      <RoleID>Role 147</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 54</ID>
+      <Name>DimensionPermission 54</Name>
+      <CreatedTimestamp>2022-12-02T00:43:10.623333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.14Z</LastSchemaUpdate>
+      <RoleID>Role 150</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 55</ID>
+      <Name>DimensionPermission 55</Name>
+      <CreatedTimestamp>2022-12-02T00:43:10.88Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.176667Z</LastSchemaUpdate>
+      <RoleID>Role 157</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 56</ID>
+      <Name>DimensionPermission 56</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.07Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.21Z</LastSchemaUpdate>
+      <RoleID>Role 158</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 57</ID>
+      <Name>DimensionPermission 57</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.243333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.253333Z</LastSchemaUpdate>
+      <RoleID>Role 45</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 58</ID>
+      <Name>DimensionPermission 58</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.43Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.306667Z</LastSchemaUpdate>
+      <RoleID>Role 160</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 59</ID>
+      <Name>DimensionPermission 59</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.606667Z</LastSchemaUpdate>
+      <RoleID>Role 161</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 61</ID>
+      <Name>DimensionPermission 61</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.64Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.883333Z</LastSchemaUpdate>
+      <RoleID>Role 162</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 62</ID>
+      <Name>DimensionPermission 62</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.753333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.92Z</LastSchemaUpdate>
+      <RoleID>Role 163</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 63</ID>
+      <Name>DimensionPermission 63</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.836667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.956667Z</LastSchemaUpdate>
+      <RoleID>Role 164</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 64</ID>
+      <Name>DimensionPermission 64</Name>
+      <CreatedTimestamp>2022-12-02T00:43:11.95Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:26.99Z</LastSchemaUpdate>
+      <RoleID>Role 165</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 65</ID>
+      <Name>DimensionPermission 65</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.07Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.023333Z</LastSchemaUpdate>
+      <RoleID>Role 166</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 66</ID>
+      <Name>DimensionPermission 66</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.176667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.06Z</LastSchemaUpdate>
+      <RoleID>Role 167</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 67</ID>
+      <Name>DimensionPermission 67</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.236667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.096667Z</LastSchemaUpdate>
+      <RoleID>Role 90</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 60</ID>
+      <Name>DimensionPermission 60</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.373333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.133333Z</LastSchemaUpdate>
+      <RoleID>Role 98</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 69</ID>
+      <Name>DimensionPermission 69</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.54Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.166667Z</LastSchemaUpdate>
+      <RoleID>Role 170</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 70</ID>
+      <Name>DimensionPermission 70</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.77Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.203333Z</LastSchemaUpdate>
+      <RoleID>Role 541</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 71</ID>
+      <Name>DimensionPermission 71</Name>
+      <CreatedTimestamp>2022-12-02T00:43:12.92Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.24Z</LastSchemaUpdate>
+      <RoleID>Role 63</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.13Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.273333Z</LastSchemaUpdate>
+      <RoleID>Role 184</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.203333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.313333Z</LastSchemaUpdate>
+      <RoleID>Role 169</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 68</ID>
+      <Name>DimensionPermission 68</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.356667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.346667Z</LastSchemaUpdate>
+      <RoleID>Role 187</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 72</ID>
+      <Name>DimensionPermission 72</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.563333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.383333Z</LastSchemaUpdate>
+      <RoleID>Role 188</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 73</ID>
+      <Name>DimensionPermission 73</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.706667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.416667Z</LastSchemaUpdate>
+      <RoleID>Role 189</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 74</ID>
+      <Name>DimensionPermission 74</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.843333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.453333Z</LastSchemaUpdate>
+      <RoleID>Role 190</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 75</ID>
+      <Name>DimensionPermission 75</Name>
+      <CreatedTimestamp>2022-12-02T00:43:13.976667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.49Z</LastSchemaUpdate>
+      <RoleID>Role 191</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 76</ID>
+      <Name>DimensionPermission 76</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.13Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.526667Z</LastSchemaUpdate>
+      <RoleID>Role 192</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 77</ID>
+      <Name>DimensionPermission 77</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.326667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.563333Z</LastSchemaUpdate>
+      <RoleID>Role 193</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 78</ID>
+      <Name>DimensionPermission 78</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.49Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.6Z</LastSchemaUpdate>
+      <RoleID>Role 194</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 79</ID>
+      <Name>DimensionPermission 79</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.643333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.636667Z</LastSchemaUpdate>
+      <RoleID>Role 195</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 80</ID>
+      <Name>DimensionPermission 80</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.75Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.673333Z</LastSchemaUpdate>
+      <RoleID>Role 196</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 81</ID>
+      <Name>DimensionPermission 81</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.86Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.706667Z</LastSchemaUpdate>
+      <RoleID>Role 197</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 7</ID>
+      <Name>DimensionPermission 7</Name>
+      <CreatedTimestamp>2022-12-02T00:43:14.97Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.743333Z</LastSchemaUpdate>
+      <RoleID>Role 17</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 82</ID>
+      <Name>DimensionPermission 82</Name>
+      <CreatedTimestamp>2022-12-09T15:56:52.333333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:44:27.78Z</LastSchemaUpdate>
+      <RoleID>Role 171</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>ID ARTICULO</ID>
+      <Name>ID ARTICULO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>43872</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>ID_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>ID_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>COD ARTICULO</AttributeID>
+          <Name>COD ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES ARTICULO</AttributeID>
+          <Name>DES ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES CLASE ARTICULO</AttributeID>
+          <Name>DES CLASE ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES CATEGORIA ARTICULO</AttributeID>
+          <Name>DES CATEGORIA ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES MODELO ARTICULO</AttributeID>
+          <Name>DES MODELO ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES SEGMENTO ARTICULO</AttributeID>
+          <Name>DES SEGMENTO ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES MARCA ARTICULO</AttributeID>
+          <Name>DES MARCA ARTICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MAXIMO</AttributeID>
+          <Name>Máximo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MINIMO</AttributeID>
+          <Name>Mínimo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>REORDEN</AttributeID>
+          <Name>Reorden</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND TIPO IMPUESTO</AttributeID>
+          <Name>Indicador de Impuesto de Ventas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND LOTE</AttributeID>
+          <Name>Indicador de Lote</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND ACTIVO</AttributeID>
+          <Name>Indicador activo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND IMPUESTO VENTAS</AttributeID>
+          <Name>Indicador tipo de impuesto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>NOMBRE LARGO</AttributeID>
+          <Name>Nombre Largo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND REQUIERE SERIE</AttributeID>
+          <Name>Indicador Requiere serie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>GARANTIA</AttributeID>
+          <Name>Garantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND IMPORTADO</AttributeID>
+          <Name>Indicador de importado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COSTO DOLARES 1</AttributeID>
+          <Name>Costo en dólares</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN UTILIDAD</AttributeID>
+          <Name>Margen Utilidad</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND SOLICITA SERIE</AttributeID>
+          <Name>Indicador Solicita serie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MODELO</AttributeID>
+          <Name>Modelo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND PERMITE EXTRAGARANTIA</AttributeID>
+          <Name>Indicador permite extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MAX MESES EXTRAGARANTIA</AttributeID>
+          <Name>Máximo meses extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND FACTURA EXTRAGARANTIA</AttributeID>
+          <Name>Indicador factura extragarantía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CODIGO ARTICULO SUSTITUTO</AttributeID>
+          <Name>Código artículo sustituto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ULTIMO COSTO</AttributeID>
+          <Name>Último Costo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND COMPRA TIENDA</AttributeID>
+          <Name>Indicador compra tienda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND REGALIA</AttributeID>
+          <Name>Indicador de regalía</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>FECHA ULTIMA COMPRA</AttributeID>
+          <Name>Fecha última compra</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN INICIAL</AttributeID>
+          <Name>Margen inicial</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN FINAL</AttributeID>
+          <Name>Margen Final</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN SEGUNDA</AttributeID>
+          <Name>Margen segunda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>FECHA ULTIMO COSTO</AttributeID>
+          <Name>Fecha último costo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND VAL CANTIDAD PEDIDO</AttributeID>
+          <Name>Indicador validación de cantidad de pedido</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CANTIDAD PEDIDA VAR</AttributeID>
+          <Name>Cantidad pedida de variación</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CONDICION REABASTECIMIENTO</AttributeID>
+          <Name>Condición de reabastecimiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CANTIDAD DIAS NUEVO</AttributeID>
+          <Name>Cantidad de días nuevo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DIAS REABASTECIMIENTO</AttributeID>
+          <Name>Días para reabastecimiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND FACIL MANEJO</AttributeID>
+          <Name>Indicador de fácil manejo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ULTIMO COSTO DIGITADO</AttributeID>
+          <Name>Ultimo costo digitado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CLASE PRODUCTO</AttributeID>
+          <Name>Clase del producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND FACTURA ASISTENCIA</AttributeID>
+          <Name>Indicador factura asistencia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND SUSPENDIDO</AttributeID>
+          <Name>Indicador Suspendido</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MOTIVO SUSPENSION</AttributeID>
+          <Name>Motivo suspensión</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>IND DISTRIBUCION</AttributeID>
+          <Name>Indicador distribución</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>FECHA HASTA CUANDO DISTRIBUYE</AttributeID>
+          <Name>Fecha hasta cuando se distribuye</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MOTIVO DISTRIBUCION</AttributeID>
+          <Name>Motivo de distribución</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN UTILIDAD MINIMA</AttributeID>
+          <Name>Margen utilidad mínima</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN INICIAL GOLFITO</AttributeID>
+          <Name>Margen inicial Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN FINAL GOLFITO</AttributeID>
+          <Name>Margen final Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MARGEN SEGUNDA GOLFITO</AttributeID>
+          <Name>Margen segunda Golfito</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>TIPO PRODUCTO</AttributeID>
+          <Name>Tipo de Producto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CLASIFICACION</AttributeID>
+          <Name>Clasificación</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ID COMPANIA</AttributeID>
+          <Name>Compañia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES IND DESCONTINUADO</AttributeID>
+          <Name>DES IND DESCONTINUADO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DES MOTIVO DESCONTINUADO</AttributeID>
+          <Name>DES MOTIVO DESCONTINUADO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COD ARTICULO</ID>
+      <Name>Código artículo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>COD_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>COD_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES ARTICULO</ID>
+      <Name>DES ARTICULO</Name>
+      <EstimatedCount>53814</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>200</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES CLASE ARTICULO</ID>
+      <Name>DES CLASE ARTICULO</Name>
+      <EstimatedCount>30</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_CLASE_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_CLASE_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES CATEGORIA ARTICULO</ID>
+      <Name>DES CATEGORIA ARTICULO</Name>
+      <EstimatedCount>104</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_CATEGORIA_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_CATEGORIA_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES MODELO ARTICULO</ID>
+      <Name>DES MODELO ARTICULO</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_MODELO_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_MODELO_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES SEGMENTO ARTICULO</ID>
+      <Name>DES SEGMENTO ARTICULO</Name>
+      <EstimatedCount>546</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_SEGMENTO_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_SEGMENTO_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES MARCA ARTICULO</ID>
+      <Name>DES MARCA ARTICULO</Name>
+      <EstimatedCount>2041</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_MARCA_ARTICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_MARCA_ARTICULO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MAXIMO</ID>
+      <Name>Máximo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MAXIMO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MAXIMO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MINIMO</ID>
+      <Name>Mínimo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MINIMO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MINIMO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>REORDEN</ID>
+      <Name>Reorden</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>REORDEN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>REORDEN</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND TIPO IMPUESTO</ID>
+      <Name>Indicador de Impuesto de Ventas</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_TIPO_IMPUESTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_TIPO_IMPUESTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND LOTE</ID>
+      <Name>Indicador de Lote</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_LOTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_LOTE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND ACTIVO</ID>
+      <Name>Indicador activo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_ACTIVO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_ACTIVO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND IMPUESTO VENTAS</ID>
+      <Name>Indicador tipo de impuesto</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_IMPUESTO_VENTAS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_IMPUESTO_VENTAS</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>NOMBRE LARGO</ID>
+      <Name>Nombre Largo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>NOMBRE_LARGO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>NOMBRE_LARGO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND REQUIERE SERIE</ID>
+      <Name>Indicador Requiere serie</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_REQUIERE_SERIE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_REQUIERE_SERIE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>GARANTIA</ID>
+      <Name>Garantía</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>GARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>GARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND IMPORTADO</ID>
+      <Name>Indicador de importado</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_IMPORTADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_IMPORTADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COSTO DOLARES 1</ID>
+      <Name>Costo en dólares</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>COSTO_DOLARES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>COSTO_DOLARES</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN UTILIDAD</ID>
+      <Name>Margen Utilidad</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_UTILIDAD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_UTILIDAD</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND SOLICITA SERIE</ID>
+      <Name>Indicador Solicita serie</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_SOLICITA_SERIE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_SOLICITA_SERIE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MODELO</ID>
+      <Name>Modelo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MODELO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MODELO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND PERMITE EXTRAGARANTIA</ID>
+      <Name>Indicador permite extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_PERMITE_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_PERMITE_EXTRAGARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MAX MESES EXTRAGARANTIA</ID>
+      <Name>Máximo meses extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MAX_MESES_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MAX_MESES_EXTRAGARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND FACTURA EXTRAGARANTIA</ID>
+      <Name>Indicador factura extragarantía</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_FACTURA_EXTRAGARANTIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_FACTURA_EXTRAGARANTIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CODIGO ARTICULO SUSTITUTO</ID>
+      <Name>Código artículo sustituto</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CODIGO_ARTICULO_SUSTITUTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CODIGO_ARTICULO_SUSTITUTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ULTIMO COSTO</ID>
+      <Name>Último Costo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>ULTIMO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>ULTIMO_COSTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND COMPRA TIENDA</ID>
+      <Name>Indicador compra tienda</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_COMPRA_TIENDA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_COMPRA_TIENDA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND REGALIA</ID>
+      <Name>Indicador de regalía</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_REGALIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_REGALIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>FECHA ULTIMA COMPRA</ID>
+      <Name>Fecha última compra</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>FECHA_ULTIMA_COMPRA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>FECHA_ULTIMA_COMPRA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN INICIAL</ID>
+      <Name>Margen inicial</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_INICIAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_INICIAL</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN FINAL</ID>
+      <Name>Margen Final</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_FINAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_FINAL</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN SEGUNDA</ID>
+      <Name>Margen segunda</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_SEGUNDA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_SEGUNDA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>FECHA ULTIMO COSTO</ID>
+      <Name>Fecha último costo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>FECHA_ULTIMO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>FECHA_ULTIMO_COSTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND VAL CANTIDAD PEDIDO</ID>
+      <Name>Indicador validación de cantidad de pedido</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_VAL_CANTIDAD_PEDIDO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_VAL_CANTIDAD_PEDIDO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CANTIDAD PEDIDA VAR</ID>
+      <Name>Cantidad pedida de variación</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CANTIDAD_PEDIDA_VAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CANTIDAD_PEDIDA_VAR</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CONDICION REABASTECIMIENTO</ID>
+      <Name>Condición de reabastecimiento</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CONDICION_REABASTECIMIENTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CONDICION_REABASTECIMIENTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CANTIDAD DIAS NUEVO</ID>
+      <Name>Cantidad de días nuevo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CANTIDAD_DIAS_NUEVO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CANTIDAD_DIAS_NUEVO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DIAS REABASTECIMIENTO</ID>
+      <Name>Días para reabastecimiento</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DIAS_REABASTECIMIENTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DIAS_REABASTECIMIENTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND FACIL MANEJO</ID>
+      <Name>Indicador de fácil manejo</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_FACIL_MANEJO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_FACIL_MANEJO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ULTIMO COSTO DIGITADO</ID>
+      <Name>Ultimo costo digitado</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>ULTIMO_COSTO_DIGITADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>ULTIMO_COSTO_DIGITADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CLASE PRODUCTO</ID>
+      <Name>Clase del producto</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CLASE_PRODUCTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CLASE_PRODUCTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND FACTURA ASISTENCIA</ID>
+      <Name>Indicador factura asistencia</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_FACTURA_ASISTENCIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_FACTURA_ASISTENCIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND SUSPENDIDO</ID>
+      <Name>Indicador Suspendido</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_SUSPENDIDO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_SUSPENDIDO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MOTIVO SUSPENSION</ID>
+      <Name>Motivo suspensión</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MOTIVO_SUSPENSION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MOTIVO_SUSPENSION</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>IND DISTRIBUCION</ID>
+      <Name>Indicador distribución</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>IND_DISTRIBUCION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>IND_DISTRIBUCION</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>FECHA HASTA CUANDO DISTRIBUYE</ID>
+      <Name>Fecha hasta cuando se distribuye</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>FECHA_HASTA_CUANDO_DISTRIBUYE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>FECHA_HASTA_CUANDO_DISTRIBUYE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MOTIVO DISTRIBUCION</ID>
+      <Name>Motivo de distribución</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MOTIVO_DISTRIBUCION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MOTIVO_DISTRIBUCION</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN UTILIDAD MINIMA</ID>
+      <Name>Margen utilidad mínima</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_UTILIDAD_MINIMA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_UTILIDAD_MINIMA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN INICIAL GOLFITO</ID>
+      <Name>Margen inicial Golfito</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_INICIAL_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_INICIAL_GOLFITO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN FINAL GOLFITO</ID>
+      <Name>Margen final Golfito</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_FINAL_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_FINAL_GOLFITO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MARGEN SEGUNDA GOLFITO</ID>
+      <Name>Margen segunda Golfito</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>MARGEN_SEGUNDA_GOLFITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>MARGEN_SEGUNDA_GOLFITO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>TIPO PRODUCTO</ID>
+      <Name>Tipo de Producto</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>TIPO_PRODUCTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>TIPO_PRODUCTO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CLASIFICACION</ID>
+      <Name>Clasificación</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>CLASIFICACION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>CLASIFICACION</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ID COMPANIA</ID>
+      <Name>Compañia</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_COMPANIA</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES IND DESCONTINUADO</ID>
+      <Name>DES IND DESCONTINUADO</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_IND_DESCONTINUADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_IND_DESCONTINUADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES MOTIVO DESCONTINUADO</ID>
+      <Name>DES MOTIVO DESCONTINUADO</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>250</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>INV_TD_ARTICULO_INV</TableID>
+            <ColumnID>DES_MOTIVO_DESCONTINUADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>INV_TD_ARTICULO_INV</TableID>
+          <ColumnID>DES_MOTIVO_DESCONTINUADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy 1</ID>
+      <Name>Categoría Artículo</Name>
+      <Levels>
+        <Level>
+          <ID>DES CATEGORIA ARTICULO</ID>
+          <Name>Categoría Artículo</Name>
+          <SourceAttributeID>DES CATEGORIA ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 1 1</ID>
+      <Name>Segmento Artículo</Name>
+      <Levels>
+        <Level>
+          <ID>DES SEGMENTO ARTICULO</ID>
+          <Name>Segmento Artículo</Name>
+          <SourceAttributeID>DES SEGMENTO ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 2</ID>
+      <Name>Clase Artículo</Name>
+      <Levels>
+        <Level>
+          <ID>DES CLASE ARTICULO</ID>
+          <Name>Clase Artículo</Name>
+          <SourceAttributeID>DES CLASE ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 3</ID>
+      <Name>Marca Artículo</Name>
+      <Levels>
+        <Level>
+          <ID>DES MARCA ARTICULO</ID>
+          <Name>Marca Artículo</Name>
+          <SourceAttributeID>DES MARCA ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 4</ID>
+      <Name>Artículo</Name>
+      <Levels>
+        <Level>
+          <ID>DES ARTICULO</ID>
+          <Name>Artículo</Name>
+          <SourceAttributeID>DES ARTICULO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Motivo Descontinuado</Name>
+      <Levels>
+        <Level>
+          <ID>DES MOTIVO DESCONTINUADO</ID>
+          <Name>Motivo Descontinuado</Name>
+          <SourceAttributeID>DES MOTIVO DESCONTINUADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 1 2</ID>
+      <Name>Indicador Descontinuado</Name>
+      <Levels>
+        <Level>
+          <ID>DES IND DESCONTINUADO</ID>
+          <Name>Indicador Descontinuado</Name>
+          <SourceAttributeID>DES IND DESCONTINUADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

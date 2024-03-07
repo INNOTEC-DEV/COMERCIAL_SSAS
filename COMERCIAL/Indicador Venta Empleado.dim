@@ -1,0 +1,935 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Indicador Venta Empleado</ID>
+  <Name>Indicador Venta Empleado</Name>
+  <CreatedTimestamp>2022-12-02T00:49:26.396667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2023-03-01T00:45:05.076667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3036" scrolltop="-9155" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="13626" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="TD_IND_VENTA_EMPLEADO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5318" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c6140000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="COM_TD_IND_VENTA_EMPLEADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3036</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9155</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2023-04-13T09:21:34.903333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>DWH</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission>
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2022-12-02T00:49:26.576667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.246667Z</LastSchemaUpdate>
+      <RoleID>Role 50</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2022-12-02T00:49:26.723333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.256667Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>2022-12-02T00:49:26.916667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.266667Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.066667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.276667Z</LastSchemaUpdate>
+      <RoleID>Role 10</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.186667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.286667Z</LastSchemaUpdate>
+      <RoleID>Role 11</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.313333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.296667Z</LastSchemaUpdate>
+      <RoleID>Role 15</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 6</ID>
+      <Name>DimensionPermission 6</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.426667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.303333Z</LastSchemaUpdate>
+      <RoleID>Role 39</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 7</ID>
+      <Name>DimensionPermission 7</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.54Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.313333Z</LastSchemaUpdate>
+      <RoleID>Role 42</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 8</ID>
+      <Name>DimensionPermission 8</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.643333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.326667Z</LastSchemaUpdate>
+      <RoleID>Role 66</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 9</ID>
+      <Name>DimensionPermission 9</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.76Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.333333Z</LastSchemaUpdate>
+      <RoleID>Role 123</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 10</ID>
+      <Name>DimensionPermission 10</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.863333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.343333Z</LastSchemaUpdate>
+      <RoleID>Role 22</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 11</ID>
+      <Name>DimensionPermission 11</Name>
+      <CreatedTimestamp>2022-12-02T00:49:27.97Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.353333Z</LastSchemaUpdate>
+      <RoleID>Role 79</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 12</ID>
+      <Name>DimensionPermission 12</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.083333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.363333Z</LastSchemaUpdate>
+      <RoleID>Role 81</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 13</ID>
+      <Name>DimensionPermission 13</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.176667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.373333Z</LastSchemaUpdate>
+      <RoleID>Role 533</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 14</ID>
+      <Name>DimensionPermission 14</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.256667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.383333Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 15</ID>
+      <Name>DimensionPermission 15</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.386667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.393333Z</LastSchemaUpdate>
+      <RoleID>Role 544</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 16</ID>
+      <Name>DimensionPermission 16</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.496667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.4Z</LastSchemaUpdate>
+      <RoleID>Role 548</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 19</ID>
+      <Name>DimensionPermission 19</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.583333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.413333Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 21</ID>
+      <Name>DimensionPermission 21</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.7Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.423333Z</LastSchemaUpdate>
+      <RoleID>Role 25</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 23</ID>
+      <Name>DimensionPermission 23</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.823333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.433333Z</LastSchemaUpdate>
+      <RoleID>Role 26</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 25</ID>
+      <Name>DimensionPermission 25</Name>
+      <CreatedTimestamp>2022-12-02T00:49:28.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.443333Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 26</ID>
+      <Name>DimensionPermission 26</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.046667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.453333Z</LastSchemaUpdate>
+      <RoleID>Role 30</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 27</ID>
+      <Name>DimensionPermission 27</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.126667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.463333Z</LastSchemaUpdate>
+      <RoleID>Role 35</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 28</ID>
+      <Name>DimensionPermission 28</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.21Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.473333Z</LastSchemaUpdate>
+      <RoleID>Role 46</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 29</ID>
+      <Name>DimensionPermission 29</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.366667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.483333Z</LastSchemaUpdate>
+      <RoleID>Role 18</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 30</ID>
+      <Name>DimensionPermission 30</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.426667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.496667Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 31</ID>
+      <Name>DimensionPermission 31</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.51Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.503333Z</LastSchemaUpdate>
+      <RoleID>Role 84</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 32</ID>
+      <Name>DimensionPermission 32</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.646667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.513333Z</LastSchemaUpdate>
+      <RoleID>Role 121</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 33</ID>
+      <Name>DimensionPermission 33</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.75Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.523333Z</LastSchemaUpdate>
+      <RoleID>Role 127</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 34</ID>
+      <Name>DimensionPermission 34</Name>
+      <CreatedTimestamp>2022-12-02T00:49:29.89Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.54Z</LastSchemaUpdate>
+      <RoleID>Role 128</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 35</ID>
+      <Name>DimensionPermission 35</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.066667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.556667Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 36</ID>
+      <Name>DimensionPermission 36</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.186667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.573333Z</LastSchemaUpdate>
+      <RoleID>Role 058</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 37</ID>
+      <Name>DimensionPermission 37</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.336667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.583333Z</LastSchemaUpdate>
+      <RoleID>Role 68</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 38</ID>
+      <Name>DimensionPermission 38</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.526667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.59Z</LastSchemaUpdate>
+      <RoleID>Role 92</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 39</ID>
+      <Name>DimensionPermission 39</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.746667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.6Z</LastSchemaUpdate>
+      <RoleID>Role 105</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 40</ID>
+      <Name>DimensionPermission 40</Name>
+      <CreatedTimestamp>2022-12-02T00:49:30.923333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.61Z</LastSchemaUpdate>
+      <RoleID>Role 146</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 41</ID>
+      <Name>DimensionPermission 41</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.09Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.62Z</LastSchemaUpdate>
+      <RoleID>Role 320</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 42</ID>
+      <Name>DimensionPermission 42</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.223333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.633333Z</LastSchemaUpdate>
+      <RoleID>Role 52</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 43</ID>
+      <Name>DimensionPermission 43</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.323333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.64Z</LastSchemaUpdate>
+      <RoleID>Role 53</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 44</ID>
+      <Name>DimensionPermission 44</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.426667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.653333Z</LastSchemaUpdate>
+      <RoleID>Role 58</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 45</ID>
+      <Name>DimensionPermission 45</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.6Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.663333Z</LastSchemaUpdate>
+      <RoleID>Role 33</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 46</ID>
+      <Name>DimensionPermission 46</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.713333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.673333Z</LastSchemaUpdate>
+      <RoleID>Role 61</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 47</ID>
+      <Name>DimensionPermission 47</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.84Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.68Z</LastSchemaUpdate>
+      <RoleID>Role 64</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 48</ID>
+      <Name>DimensionPermission 48</Name>
+      <CreatedTimestamp>2022-12-02T00:49:31.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.69Z</LastSchemaUpdate>
+      <RoleID>Role 76</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 49</ID>
+      <Name>DimensionPermission 49</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.096667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.696667Z</LastSchemaUpdate>
+      <RoleID>Role 78</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 52</ID>
+      <Name>DimensionPermission 52</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.246667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.706667Z</LastSchemaUpdate>
+      <RoleID>Role 47</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 53</ID>
+      <Name>DimensionPermission 53</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.46Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.713333Z</LastSchemaUpdate>
+      <RoleID>Role 99</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 20</ID>
+      <Name>DimensionPermission 20</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.636667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.723333Z</LastSchemaUpdate>
+      <RoleID>Role 24</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 51</ID>
+      <Name>DimensionPermission 51</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.746667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.73Z</LastSchemaUpdate>
+      <RoleID>Role 101</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 50</ID>
+      <Name>DimensionPermission 50</Name>
+      <CreatedTimestamp>2022-12-02T00:49:32.94Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.74Z</LastSchemaUpdate>
+      <RoleID>Role 85</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 54</ID>
+      <Name>DimensionPermission 54</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.05Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.746667Z</LastSchemaUpdate>
+      <RoleID>Role 106</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 55</ID>
+      <Name>DimensionPermission 55</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.226667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.753333Z</LastSchemaUpdate>
+      <RoleID>Role 107</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 56</ID>
+      <Name>DimensionPermission 56</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.343333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.763333Z</LastSchemaUpdate>
+      <RoleID>Role 113</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 57</ID>
+      <Name>DimensionPermission 57</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.493333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.773333Z</LastSchemaUpdate>
+      <RoleID>Role 114</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 58</ID>
+      <Name>DimensionPermission 58</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.593333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.78Z</LastSchemaUpdate>
+      <RoleID>Role 117</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 59</ID>
+      <Name>DimensionPermission 59</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.683333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.79Z</LastSchemaUpdate>
+      <RoleID>Role 125</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 60</ID>
+      <Name>DimensionPermission 60</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.773333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.8Z</LastSchemaUpdate>
+      <RoleID>Role 130</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 61</ID>
+      <Name>DimensionPermission 61</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.853333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.81Z</LastSchemaUpdate>
+      <RoleID>Role 133</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 62</ID>
+      <Name>DimensionPermission 62</Name>
+      <CreatedTimestamp>2022-12-02T00:49:33.936667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.82Z</LastSchemaUpdate>
+      <RoleID>Role 135</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 63</ID>
+      <Name>DimensionPermission 63</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.09Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.83Z</LastSchemaUpdate>
+      <RoleID>Role 138</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 64</ID>
+      <Name>DimensionPermission 64</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.163333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.84Z</LastSchemaUpdate>
+      <RoleID>Role 139</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 24</ID>
+      <Name>DimensionPermission 24</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.313333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.856667Z</LastSchemaUpdate>
+      <RoleID>Role 144</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 65</ID>
+      <Name>DimensionPermission 65</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.433333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.863333Z</LastSchemaUpdate>
+      <RoleID>Role 147</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 66</ID>
+      <Name>DimensionPermission 66</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.503333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.876667Z</LastSchemaUpdate>
+      <RoleID>Role 150</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 67</ID>
+      <Name>DimensionPermission 67</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.67Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.886667Z</LastSchemaUpdate>
+      <RoleID>Role 157</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 68</ID>
+      <Name>DimensionPermission 68</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.886667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.893333Z</LastSchemaUpdate>
+      <RoleID>Role 158</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 69</ID>
+      <Name>DimensionPermission 69</Name>
+      <CreatedTimestamp>2022-12-02T00:49:34.996667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.903333Z</LastSchemaUpdate>
+      <RoleID>Role 45</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 70</ID>
+      <Name>DimensionPermission 70</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.19Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.913333Z</LastSchemaUpdate>
+      <RoleID>Role 160</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 71</ID>
+      <Name>DimensionPermission 71</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.366667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.923333Z</LastSchemaUpdate>
+      <RoleID>Role 161</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 73</ID>
+      <Name>DimensionPermission 73</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.51Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.933333Z</LastSchemaUpdate>
+      <RoleID>Role 162</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 74</ID>
+      <Name>DimensionPermission 74</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.666667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.943333Z</LastSchemaUpdate>
+      <RoleID>Role 163</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 75</ID>
+      <Name>DimensionPermission 75</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.823333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.956667Z</LastSchemaUpdate>
+      <RoleID>Role 164</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 76</ID>
+      <Name>DimensionPermission 76</Name>
+      <CreatedTimestamp>2022-12-02T00:49:35.916667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.966667Z</LastSchemaUpdate>
+      <RoleID>Role 165</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 77</ID>
+      <Name>DimensionPermission 77</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.09Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.976667Z</LastSchemaUpdate>
+      <RoleID>Role 166</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 78</ID>
+      <Name>DimensionPermission 78</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.223333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.986667Z</LastSchemaUpdate>
+      <RoleID>Role 167</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 79</ID>
+      <Name>DimensionPermission 79</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.33Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:05.993333Z</LastSchemaUpdate>
+      <RoleID>Role 90</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 72</ID>
+      <Name>DimensionPermission 72</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.42Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.003333Z</LastSchemaUpdate>
+      <RoleID>Role 98</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 81</ID>
+      <Name>DimensionPermission 81</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.5Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.013333Z</LastSchemaUpdate>
+      <RoleID>Role 170</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 82</ID>
+      <Name>DimensionPermission 82</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.63Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.026667Z</LastSchemaUpdate>
+      <RoleID>Role 67</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 83</ID>
+      <Name>DimensionPermission 83</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.726667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.036667Z</LastSchemaUpdate>
+      <RoleID>Role 541</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 84</ID>
+      <Name>DimensionPermission 84</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.84Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.046667Z</LastSchemaUpdate>
+      <RoleID>Role 63</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 17</ID>
+      <Name>DimensionPermission 17</Name>
+      <CreatedTimestamp>2022-12-02T00:49:36.953333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.056667Z</LastSchemaUpdate>
+      <RoleID>Role 184</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 18</ID>
+      <Name>DimensionPermission 18</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.08Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.063333Z</LastSchemaUpdate>
+      <RoleID>Role 169</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 80</ID>
+      <Name>DimensionPermission 80</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.176667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.076667Z</LastSchemaUpdate>
+      <RoleID>Role 187</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 85</ID>
+      <Name>DimensionPermission 85</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.35Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.083333Z</LastSchemaUpdate>
+      <RoleID>Role 188</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 86</ID>
+      <Name>DimensionPermission 86</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.543333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.096667Z</LastSchemaUpdate>
+      <RoleID>Role 189</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 87</ID>
+      <Name>DimensionPermission 87</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.676667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.106667Z</LastSchemaUpdate>
+      <RoleID>Role 190</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 88</ID>
+      <Name>DimensionPermission 88</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.81Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.116667Z</LastSchemaUpdate>
+      <RoleID>Role 191</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 89</ID>
+      <Name>DimensionPermission 89</Name>
+      <CreatedTimestamp>2022-12-02T00:49:37.95Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.126667Z</LastSchemaUpdate>
+      <RoleID>Role 192</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 90</ID>
+      <Name>DimensionPermission 90</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.066667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.133333Z</LastSchemaUpdate>
+      <RoleID>Role 193</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 91</ID>
+      <Name>DimensionPermission 91</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.226667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.146667Z</LastSchemaUpdate>
+      <RoleID>Role 194</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 92</ID>
+      <Name>DimensionPermission 92</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.426667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.153333Z</LastSchemaUpdate>
+      <RoleID>Role 195</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 93</ID>
+      <Name>DimensionPermission 93</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.606667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.163333Z</LastSchemaUpdate>
+      <RoleID>Role 196</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 94</ID>
+      <Name>DimensionPermission 94</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.75Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.176667Z</LastSchemaUpdate>
+      <RoleID>Role 197</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 22</ID>
+      <Name>DimensionPermission 22</Name>
+      <CreatedTimestamp>2022-12-02T00:49:38.87Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.183333Z</LastSchemaUpdate>
+      <RoleID>Role 17</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 95</ID>
+      <Name>DimensionPermission 95</Name>
+      <CreatedTimestamp>2022-12-09T15:56:48.236667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2023-03-01T00:45:06.193333Z</LastSchemaUpdate>
+      <RoleID>Role 171</RoleID>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>ID IND VENTA EMPLEADO</ID>
+      <Name>ID IND VENTA EMPLEADO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>COM_TD_IND_VENTA_EMPLEADO</TableID>
+            <ColumnID>ID_IND_VENTA_EMPLEADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_IND_VENTA_EMPLEADO</TableID>
+          <ColumnID>ID_IND_VENTA_EMPLEADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>DES IND VENTA EMPLEADO</AttributeID>
+          <Name>DES IND VENTA EMPLEADO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DES IND VENTA EMPLEADO</ID>
+      <Name>DES IND VENTA EMPLEADO</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>COM_TD_IND_VENTA_EMPLEADO</TableID>
+            <ColumnID>DES_IND_VENTA_EMPLEADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>COM_TD_IND_VENTA_EMPLEADO</TableID>
+          <ColumnID>DES_IND_VENTA_EMPLEADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Indicador Venta Empleado</Name>
+      <Levels>
+        <Level>
+          <ID>DES IND VENTA EMPLEADO</ID>
+          <Name>Indicador Venta Empleado</Name>
+          <SourceAttributeID>DES IND VENTA EMPLEADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,1625 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.19623.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>COMERCIAL.database</Name>
+    <FullPath>COMERCIAL.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Inventario.cube</Name>
+      <FullPath>Inventario.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Inventario.partitions</Name>
+          <FullPath>Inventario.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ventas.cube</Name>
+      <FullPath>Ventas.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Ventas.partitions</Name>
+          <FullPath>Ventas.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>80_20 Clase.dim</Name>
+      <FullPath>80_20 Clase.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>80_20 Meses Promedio.dim</Name>
+      <FullPath>80_20 Meses Promedio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Almacen Fiscal.dim</Name>
+      <FullPath>Almacen Fiscal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Área de Venta.dim</Name>
+      <FullPath>Área de Venta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Artículo Inventarios.dim</Name>
+      <FullPath>Artículo Inventarios.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Artículo.dim</Name>
+      <FullPath>Artículo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bodega Tipo Reclasificado.dim</Name>
+      <FullPath>Bodega Tipo Reclasificado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bodega.dim</Name>
+      <FullPath>Bodega.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Campaña.dim</Name>
+      <FullPath>Campaña.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cantidad Hijos Cliente.dim</Name>
+      <FullPath>Cantidad Hijos Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cantidad Inmuebles Cliente.dim</Name>
+      <FullPath>Cantidad Inmuebles Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clasificación Cliente.dim</Name>
+      <FullPath>Clasificación Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comisión Promotor.dim</Name>
+      <FullPath>Comisión Promotor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comisión Vendedor.dim</Name>
+      <FullPath>Comisión Vendedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Compañia.dim</Name>
+      <FullPath>Compañia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Civil Cliente.dim</Name>
+      <FullPath>Estado Civil Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Orden.dim</Name>
+      <FullPath>Estado Orden.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Reabastecimiento Encabezado.dim</Name>
+      <FullPath>Estado Reabastecimiento Encabezado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Despacho Nivel.dim</Name>
+      <FullPath>Fecha Despacho Nivel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Documento Importación.dim</Name>
+      <FullPath>Fecha Documento Importación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Ejecución Rotacion.dim</Name>
+      <FullPath>Fecha Ejecución Rotacion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Entrega Apartado.dim</Name>
+      <FullPath>Fecha Entrega Apartado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Ingreso Bodega.dim</Name>
+      <FullPath>Fecha Ingreso Bodega.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha OC.dim</Name>
+      <FullPath>Fecha OC.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Pedido.dim</Name>
+      <FullPath>Fecha Pedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Última Compra Nivel.dim</Name>
+      <FullPath>Fecha Última Compra Nivel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Última Toma Saldos.dim</Name>
+      <FullPath>Fecha Última Toma Saldos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Última Venta.dim</Name>
+      <FullPath>Fecha Última Venta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Vencimiento Apartado.dim</Name>
+      <FullPath>Fecha Vencimiento Apartado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha.dim</Name>
+      <FullPath>Fecha.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Forma de Pago.dim</Name>
+      <FullPath>Forma de Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Género Cliente.dim</Name>
+      <FullPath>Género Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hora Transacción.dim</Name>
+      <FullPath>Hora Transacción.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Apartado Anulado.dim</Name>
+      <FullPath>Indicador Apartado Anulado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Apartado Entregado.dim</Name>
+      <FullPath>Indicador Apartado Entregado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Baja Rotación.dim</Name>
+      <FullPath>Indicador Baja Rotación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Compra Condicionada.dim</Name>
+      <FullPath>Indicador Compra Condicionada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Estado.dim</Name>
+      <FullPath>Indicador Estado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Extragarantía.dim</Name>
+      <FullPath>Indicador Extragarantía.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Home Delivery.dim</Name>
+      <FullPath>Indicador Home Delivery.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Institucional.dim</Name>
+      <FullPath>Indicador Institucional.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Interés.dim</Name>
+      <FullPath>Indicador Interés.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Matriculada Tasa 0 Banco.dim</Name>
+      <FullPath>Indicador Matriculada Tasa 0 Banco.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Matriculada Tasa 0 Unicomer.dim</Name>
+      <FullPath>Indicador Matriculada Tasa 0 Unicomer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Orden Patronal.dim</Name>
+      <FullPath>Indicador Orden Patronal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Pasa CEDI.dim</Name>
+      <FullPath>Indicador Pasa CEDI.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Plan Especial Vigente.dim</Name>
+      <FullPath>Indicador Plan Especial Vigente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Posee Carro.dim</Name>
+      <FullPath>Indicador Posee Carro.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Posee Casa.dim</Name>
+      <FullPath>Indicador Posee Casa.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Refinanciamiento.dim</Name>
+      <FullPath>Indicador Refinanciamiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Regalía.dim</Name>
+      <FullPath>Indicador Regalía.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Tarjeta.dim</Name>
+      <FullPath>Indicador Tarjeta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Venta Empleado.dim</Name>
+      <FullPath>Indicador Venta Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Venta Exonerada.dim</Name>
+      <FullPath>Indicador Venta Exonerada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Venta Omnicanal.dim</Name>
+      <FullPath>Indicador Venta Omnicanal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Venta Óptica.dim</Name>
+      <FullPath>Indicador Venta Óptica.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Líneas Auto.dim</Name>
+      <FullPath>Líneas Auto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mensualidad.dim</Name>
+      <FullPath>Mensualidad.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Moneda.dim</Name>
+      <FullPath>Moneda.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Movimientos Bodega Destino.dim</Name>
+      <FullPath>Movimientos Bodega Destino.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Movimientos Bodega Origen.dim</Name>
+      <FullPath>Movimientos Bodega Origen.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Movimientos Línea de detalle.dim</Name>
+      <FullPath>Movimientos Línea de detalle.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Movimientos Tipo Documento.dim</Name>
+      <FullPath>Movimientos Tipo Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nacionalidad Cliente.dim</Name>
+      <FullPath>Nacionalidad Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Clasificación.dim</Name>
+      <FullPath>Nivel Clasificación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Estado.dim</Name>
+      <FullPath>Nivel Estado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Excepciones.dim</Name>
+      <FullPath>Nivel Excepciones.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Indicador Suspendido.dim</Name>
+      <FullPath>Nivel Indicador Suspendido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Indicador.dim</Name>
+      <FullPath>Nivel Indicador.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel Inventario Seguridad.dim</Name>
+      <FullPath>Nivel Inventario Seguridad.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel LeadTime.dim</Name>
+      <FullPath>Nivel LeadTime.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Contenedor.dim</Name>
+      <FullPath>Número Contenedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Documento IMP.dim</Name>
+      <FullPath>Número Documento IMP.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Documento.dim</Name>
+      <FullPath>Número Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Embarque.dim</Name>
+      <FullPath>Número Embarque.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Factura IMP.dim</Name>
+      <FullPath>Número Factura IMP.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Orden.dim</Name>
+      <FullPath>Número Orden.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Pedido.dim</Name>
+      <FullPath>Número Pedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ocupación Cliente.dim</Name>
+      <FullPath>Ocupación Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Origen Transacción.dim</Name>
+      <FullPath>Origen Transacción.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Otros Ingresos Cliente.dim</Name>
+      <FullPath>Otros Ingresos Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Plazo Extragarantía.dim</Name>
+      <FullPath>Plazo Extragarantía.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Plazo Garantía Original.dim</Name>
+      <FullPath>Plazo Garantía Original.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Plazo.dim</Name>
+      <FullPath>Plazo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Porcentaje Descuento.dim</Name>
+      <FullPath>Porcentaje Descuento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Promotor.dim</Name>
+      <FullPath>Promotor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Proveedor.dim</Name>
+      <FullPath>Proveedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Clase Pedido.dim</Name>
+      <FullPath>Reabastecimiento Clase Pedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Dias.dim</Name>
+      <FullPath>Reabastecimiento Dias.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Estado Línea.dim</Name>
+      <FullPath>Reabastecimiento Estado Línea.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Indicador Auto.dim</Name>
+      <FullPath>Reabastecimiento Indicador Auto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Tipo Pedido.dim</Name>
+      <FullPath>Reabastecimiento Tipo Pedido.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reabastecimiento Usuario.dim</Name>
+      <FullPath>Reabastecimiento Usuario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rotacion Bodega.dim</Name>
+      <FullPath>Rotacion Bodega.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rotación Clasificación.dim</Name>
+      <FullPath>Rotación Clasificación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rotación Meses sin Rotación.dim</Name>
+      <FullPath>Rotación Meses sin Rotación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Rotación Tipo.dim</Name>
+      <FullPath>Rotación Tipo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ruta Cliente.dim</Name>
+      <FullPath>Ruta Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Salario Cliente.dim</Name>
+      <FullPath>Salario Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Saldos Indicador Mercaderia Obsoleta.dim</Name>
+      <FullPath>Saldos Indicador Mercaderia Obsoleta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Saldos Indicador Proceso Cambio Costo.dim</Name>
+      <FullPath>Saldos Indicador Proceso Cambio Costo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tasa Interés.dim</Name>
+      <FullPath>Tasa Interés.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tienda.dim</Name>
+      <FullPath>Tienda.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Cliente.dim</Name>
+      <FullPath>Tipo Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Compra Embarque.dim</Name>
+      <FullPath>Tipo Compra Embarque.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Compra.dim</Name>
+      <FullPath>Tipo Compra.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo de Contrato.dim</Name>
+      <FullPath>Tipo de Contrato.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Documento.dim</Name>
+      <FullPath>Tipo Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Identificación Cliente.dim</Name>
+      <FullPath>Tipo Identificación Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Ingreso.dim</Name>
+      <FullPath>Tipo Ingreso.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Movimiento.dim</Name>
+      <FullPath>Tipo Movimiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Pago.dim</Name>
+      <FullPath>Tipo Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Venta Extragarantía.dim</Name>
+      <FullPath>Tipo Venta Extragarantía.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Venta.dim</Name>
+      <FullPath>Tipo Venta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ubicación Cliente.dim</Name>
+      <FullPath>Ubicación Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ubicación Contenedor.dim</Name>
+      <FullPath>Ubicación Contenedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedor.dim</Name>
+      <FullPath>Vendedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ventas EMMA.dim</Name>
+      <FullPath>Ventas EMMA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim 180.dim</Name>
+      <FullPath>Dim 180.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim 90.dim</Name>
+      <FullPath>Dim 90.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim 120.dim</Name>
+      <FullPath>Dim 120.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Plataforma de Terceros.dim</Name>
+      <FullPath>Plataforma de Terceros.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Remota - Nuevo Precio.dim</Name>
+      <FullPath>Remota - Nuevo Precio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Remota - Precio Mínimo.dim</Name>
+      <FullPath>Remota - Precio Mínimo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Remota - Precio Normal.dim</Name>
+      <FullPath>Remota - Precio Normal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Remota - Usuario Autoriza.dim</Name>
+      <FullPath>Remota - Usuario Autoriza.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Remota - Usuario Solicita.dim</Name>
+      <FullPath>Remota - Usuario Solicita.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo de Autorización Remota.dim</Name>
+      <FullPath>Tipo de Autorización Remota.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clasificación IABC.dim</Name>
+      <FullPath>Clasificación IABC.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Shortage.dim</Name>
+      <FullPath>Indicador Shortage.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Shortage IABC.dim</Name>
+      <FullPath>Indicador Shortage IABC.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clasificacíon IABC PDV.dim</Name>
+      <FullPath>Clasificacíon IABC PDV.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DWH.ds</Name>
+      <FullPath>DWH.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>DWH.dsv</Name>
+      <FullPath>DWH.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Administracion Radioshack_701.role</Name>
+      <FullPath>Administracion Radioshack_701.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_702.role</Name>
+      <FullPath>Administracion Radioshack_702.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_703.role</Name>
+      <FullPath>Administracion Radioshack_703.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_704.role</Name>
+      <FullPath>Administracion Radioshack_704.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_705.role</Name>
+      <FullPath>Administracion Radioshack_705.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_706.role</Name>
+      <FullPath>Administracion Radioshack_706.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_707.role</Name>
+      <FullPath>Administracion Radioshack_707.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_708.role</Name>
+      <FullPath>Administracion Radioshack_708.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion Radioshack_709.role</Name>
+      <FullPath>Administracion Radioshack_709.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_002.role</Name>
+      <FullPath>Administracion_002.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_003.role</Name>
+      <FullPath>Administracion_003.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_004.role</Name>
+      <FullPath>Administracion_004.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_005.role</Name>
+      <FullPath>Administracion_005.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_006.role</Name>
+      <FullPath>Administracion_006.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_007.role</Name>
+      <FullPath>Administracion_007.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_008.role</Name>
+      <FullPath>Administracion_008.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_010.role</Name>
+      <FullPath>Administracion_010.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_011.role</Name>
+      <FullPath>Administracion_011.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_012.role</Name>
+      <FullPath>Administracion_012.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_013.role</Name>
+      <FullPath>Administracion_013.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_015.role</Name>
+      <FullPath>Administracion_015.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_016.role</Name>
+      <FullPath>Administracion_016.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_018.role</Name>
+      <FullPath>Administracion_018.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_019.role</Name>
+      <FullPath>Administracion_019.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_020.role</Name>
+      <FullPath>Administracion_020.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_022.role</Name>
+      <FullPath>Administracion_022.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_023.role</Name>
+      <FullPath>Administracion_023.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_028.role</Name>
+      <FullPath>Administracion_028.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_031.role</Name>
+      <FullPath>Administracion_031.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_032.role</Name>
+      <FullPath>Administracion_032.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_033.role</Name>
+      <FullPath>Administracion_033.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_034.role</Name>
+      <FullPath>Administracion_034.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_037.role</Name>
+      <FullPath>Administracion_037.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_038.role</Name>
+      <FullPath>Administracion_038.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_039.role</Name>
+      <FullPath>Administracion_039.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_042.role</Name>
+      <FullPath>Administracion_042.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_043.role</Name>
+      <FullPath>Administracion_043.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_044.role</Name>
+      <FullPath>Administracion_044.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_045.role</Name>
+      <FullPath>Administracion_045.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_048.role</Name>
+      <FullPath>Administracion_048.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_050.role</Name>
+      <FullPath>Administracion_050.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_052.role</Name>
+      <FullPath>Administracion_052.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_053.role</Name>
+      <FullPath>Administracion_053.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_054.role</Name>
+      <FullPath>Administracion_054.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_055.role</Name>
+      <FullPath>Administracion_055.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_056.role</Name>
+      <FullPath>Administracion_056.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_057.role</Name>
+      <FullPath>Administracion_057.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_058.role</Name>
+      <FullPath>Administracion_058.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_059.role</Name>
+      <FullPath>Administracion_059.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_060.role</Name>
+      <FullPath>Administracion_060.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_061.role</Name>
+      <FullPath>Administracion_061.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_062.role</Name>
+      <FullPath>Administracion_062.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_063.role</Name>
+      <FullPath>Administracion_063.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_065.role</Name>
+      <FullPath>Administracion_065.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_066.role</Name>
+      <FullPath>Administracion_066.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_067.role</Name>
+      <FullPath>Administracion_067.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_068.role</Name>
+      <FullPath>Administracion_068.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_069.role</Name>
+      <FullPath>Administracion_069.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_070.role</Name>
+      <FullPath>Administracion_070.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_071.role</Name>
+      <FullPath>Administracion_071.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_072.role</Name>
+      <FullPath>Administracion_072.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_073.role</Name>
+      <FullPath>Administracion_073.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_074.role</Name>
+      <FullPath>Administracion_074.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_075.role</Name>
+      <FullPath>Administracion_075.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_077.role</Name>
+      <FullPath>Administracion_077.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_078.role</Name>
+      <FullPath>Administracion_078.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_079.role</Name>
+      <FullPath>Administracion_079.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_080.role</Name>
+      <FullPath>Administracion_080.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_081.role</Name>
+      <FullPath>Administracion_081.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_082.role</Name>
+      <FullPath>Administracion_082.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_083.role</Name>
+      <FullPath>Administracion_083.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_084.role</Name>
+      <FullPath>Administracion_084.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_086.role</Name>
+      <FullPath>Administracion_086.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_087.role</Name>
+      <FullPath>Administracion_087.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_088.role</Name>
+      <FullPath>Administracion_088.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_089.role</Name>
+      <FullPath>Administracion_089.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_091.role</Name>
+      <FullPath>Administracion_091.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_092.role</Name>
+      <FullPath>Administracion_092.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_093.role</Name>
+      <FullPath>Administracion_093.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_094.role</Name>
+      <FullPath>Administracion_094.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_095.role</Name>
+      <FullPath>Administracion_095.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_096.role</Name>
+      <FullPath>Administracion_096.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_097.role</Name>
+      <FullPath>Administracion_097.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_098.role</Name>
+      <FullPath>Administracion_098.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_102.role</Name>
+      <FullPath>Administracion_102.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_103.role</Name>
+      <FullPath>Administracion_103.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_104.role</Name>
+      <FullPath>Administracion_104.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_105.role</Name>
+      <FullPath>Administracion_105.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_108.role</Name>
+      <FullPath>Administracion_108.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_109.role</Name>
+      <FullPath>Administracion_109.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_110.role</Name>
+      <FullPath>Administracion_110.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_111.role</Name>
+      <FullPath>Administracion_111.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_112.role</Name>
+      <FullPath>Administracion_112.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_115.role</Name>
+      <FullPath>Administracion_115.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_116.role</Name>
+      <FullPath>Administracion_116.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_118.role</Name>
+      <FullPath>Administracion_118.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_119.role</Name>
+      <FullPath>Administracion_119.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_120.role</Name>
+      <FullPath>Administracion_120.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_121.role</Name>
+      <FullPath>Administracion_121.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_122.role</Name>
+      <FullPath>Administracion_122.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_123.role</Name>
+      <FullPath>Administracion_123.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_124.role</Name>
+      <FullPath>Administracion_124.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_126.role</Name>
+      <FullPath>Administracion_126.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_127.role</Name>
+      <FullPath>Administracion_127.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_128.role</Name>
+      <FullPath>Administracion_128.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_129.role</Name>
+      <FullPath>Administracion_129.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_131.role</Name>
+      <FullPath>Administracion_131.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_132.role</Name>
+      <FullPath>Administracion_132.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_134.role</Name>
+      <FullPath>Administracion_134.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_136.role</Name>
+      <FullPath>Administracion_136.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_137.role</Name>
+      <FullPath>Administracion_137.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_140.role</Name>
+      <FullPath>Administracion_140.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_141.role</Name>
+      <FullPath>Administracion_141.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_142.role</Name>
+      <FullPath>Administracion_142.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_143.role</Name>
+      <FullPath>Administracion_143.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_145.role</Name>
+      <FullPath>Administracion_145.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_146.role</Name>
+      <FullPath>Administracion_146.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_148.role</Name>
+      <FullPath>Administracion_148.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_149.role</Name>
+      <FullPath>Administracion_149.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_151.role</Name>
+      <FullPath>Administracion_151.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_152.role</Name>
+      <FullPath>Administracion_152.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_153.role</Name>
+      <FullPath>Administracion_153.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_154.role</Name>
+      <FullPath>Administracion_154.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_155.role</Name>
+      <FullPath>Administracion_155.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_156.role</Name>
+      <FullPath>Administracion_156.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_159.role</Name>
+      <FullPath>Administracion_159.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_160.role</Name>
+      <FullPath>Administracion_160.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_161.role</Name>
+      <FullPath>Administracion_161.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_162.role</Name>
+      <FullPath>Administracion_162.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_163.role</Name>
+      <FullPath>Administracion_163.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_202.role</Name>
+      <FullPath>Administracion_202.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_203.role</Name>
+      <FullPath>Administracion_203.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_301.role</Name>
+      <FullPath>Administracion_301.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_302.role</Name>
+      <FullPath>Administracion_302.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_303.role</Name>
+      <FullPath>Administracion_303.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_304.role</Name>
+      <FullPath>Administracion_304.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_305.role</Name>
+      <FullPath>Administracion_305.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_306.role</Name>
+      <FullPath>Administracion_306.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_307.role</Name>
+      <FullPath>Administracion_307.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_308.role</Name>
+      <FullPath>Administracion_308.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_309.role</Name>
+      <FullPath>Administracion_309.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_310.role</Name>
+      <FullPath>Administracion_310.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_311.role</Name>
+      <FullPath>Administracion_311.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_312.role</Name>
+      <FullPath>Administracion_312.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_313.role</Name>
+      <FullPath>Administracion_313.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_314.role</Name>
+      <FullPath>Administracion_314.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_315.role</Name>
+      <FullPath>Administracion_315.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_316.role</Name>
+      <FullPath>Administracion_316.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_317.role</Name>
+      <FullPath>Administracion_317.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_318.role</Name>
+      <FullPath>Administracion_318.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_319.role</Name>
+      <FullPath>Administracion_319.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_320.role</Name>
+      <FullPath>Administracion_320.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_321.role</Name>
+      <FullPath>Administracion_321.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_322.role</Name>
+      <FullPath>Administracion_322.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_323.role</Name>
+      <FullPath>Administracion_323.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_324.role</Name>
+      <FullPath>Administracion_324.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_325.role</Name>
+      <FullPath>Administracion_325.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_326.role</Name>
+      <FullPath>Administracion_326.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_327.role</Name>
+      <FullPath>Administracion_327.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_328.role</Name>
+      <FullPath>Administracion_328.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_329.role</Name>
+      <FullPath>Administracion_329.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_330.role</Name>
+      <FullPath>Administracion_330.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_331.role</Name>
+      <FullPath>Administracion_331.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_332.role</Name>
+      <FullPath>Administracion_332.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_333.role</Name>
+      <FullPath>Administracion_333.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_335.role</Name>
+      <FullPath>Administracion_335.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_336.role</Name>
+      <FullPath>Administracion_336.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_337.role</Name>
+      <FullPath>Administracion_337.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_338.role</Name>
+      <FullPath>Administracion_338.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_340.role</Name>
+      <FullPath>Administracion_340.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_341.role</Name>
+      <FullPath>Administracion_341.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_342.role</Name>
+      <FullPath>Administracion_342.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_343.role</Name>
+      <FullPath>Administracion_343.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_346.role</Name>
+      <FullPath>Administracion_346.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_347.role</Name>
+      <FullPath>Administracion_347.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_401.role</Name>
+      <FullPath>Administracion_401.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_501.role</Name>
+      <FullPath>Administracion_501.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_512.role</Name>
+      <FullPath>Administracion_512.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_513.role</Name>
+      <FullPath>Administracion_513.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_515.role</Name>
+      <FullPath>Administracion_515.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_517.role</Name>
+      <FullPath>Administracion_517.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_518.role</Name>
+      <FullPath>Administracion_518.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_520.role</Name>
+      <FullPath>Administracion_520.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_522.role</Name>
+      <FullPath>Administracion_522.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_525.role</Name>
+      <FullPath>Administracion_525.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_529.role</Name>
+      <FullPath>Administracion_529.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_530.role</Name>
+      <FullPath>Administracion_530.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_532.role</Name>
+      <FullPath>Administracion_532.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_533.role</Name>
+      <FullPath>Administracion_533.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_534.role</Name>
+      <FullPath>Administracion_534.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_536.role</Name>
+      <FullPath>Administracion_536.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_537.role</Name>
+      <FullPath>Administracion_537.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_541.role</Name>
+      <FullPath>Administracion_541.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Administracion_542.role</Name>
+      <FullPath>Administracion_542.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Auditoria.role</Name>
+      <FullPath>Auditoria.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Compras.role</Name>
+      <FullPath>Compras.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Contabilidad.role</Name>
+      <FullPath>Contabilidad.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Control_Interno.role</Name>
+      <FullPath>Control_Interno.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Edwin_Calero.role</Name>
+      <FullPath>Edwin_Calero.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>EMMA.role</Name>
+      <FullPath>EMMA.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Finanzas.role</Name>
+      <FullPath>Finanzas.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>General.role</Name>
+      <FullPath>General.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Gerencia.role</Name>
+      <FullPath>Gerencia.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Gerencial_Especialista.role</Name>
+      <FullPath>Gerencial_Especialista.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Inventario_General.role</Name>
+      <FullPath>Inventario_General.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Argenis_Cordero.role</Name>
+      <FullPath>JZ_Argenis_Cordero.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Arleth_Oreamuno.role</Name>
+      <FullPath>JZ_Arleth_Oreamuno.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Gabriel_Porras.role</Name>
+      <FullPath>JZ_Gabriel_Porras.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Oscar_Murillo.role</Name>
+      <FullPath>JZ_Oscar_Murillo.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Pablo_Jim.role</Name>
+      <FullPath>JZ_Pablo_Jim.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Rolando_Ocampo.role</Name>
+      <FullPath>JZ_Rolando_Ocampo.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JZ_Ronald_Guzman.role</Name>
+      <FullPath>JZ_Ronald_Guzman.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mercadeo.role</Name>
+      <FullPath>Mercadeo.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_005.role</Name>
+      <FullPath>Optica_005.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_008.role</Name>
+      <FullPath>Optica_008.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_010.role</Name>
+      <FullPath>Optica_010.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_013.role</Name>
+      <FullPath>Optica_013.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_015.role</Name>
+      <FullPath>Optica_015.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_023.role</Name>
+      <FullPath>Optica_023.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_034.role</Name>
+      <FullPath>Optica_034.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_038.role</Name>
+      <FullPath>Optica_038.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_048.role</Name>
+      <FullPath>Optica_048.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_055.role</Name>
+      <FullPath>Optica_055.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_061.role</Name>
+      <FullPath>Optica_061.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_063.role</Name>
+      <FullPath>Optica_063.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_067.role</Name>
+      <FullPath>Optica_067.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_070.role</Name>
+      <FullPath>Optica_070.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_075.role</Name>
+      <FullPath>Optica_075.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_077.role</Name>
+      <FullPath>Optica_077.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_078.role</Name>
+      <FullPath>Optica_078.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_082.role</Name>
+      <FullPath>Optica_082.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_103.role</Name>
+      <FullPath>Optica_103.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_108.role</Name>
+      <FullPath>Optica_108.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_110.role</Name>
+      <FullPath>Optica_110.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_119.role</Name>
+      <FullPath>Optica_119.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_153.role</Name>
+      <FullPath>Optica_153.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_154.role</Name>
+      <FullPath>Optica_154.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_160.role</Name>
+      <FullPath>Optica_160.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_306.role</Name>
+      <FullPath>Optica_306.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_312.role</Name>
+      <FullPath>Optica_312.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_339.role</Name>
+      <FullPath>Optica_339.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Optica_345.role</Name>
+      <FullPath>Optica_345.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Planificacion Corporativo Salvador.role</Name>
+      <FullPath>Planificacion Corporativo Salvador.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Promotores Servicios Comercial.role</Name>
+      <FullPath>Promotores Servicios Comercial.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Recursos Humanos.role</Name>
+      <FullPath>Recursos Humanos.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Regionales.role</Name>
+      <FullPath>Regionales.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal 801.role</Name>
+      <FullPath>Servitotal 801.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal 802.role</Name>
+      <FullPath>Servitotal 802.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal 803.role</Name>
+      <FullPath>Servitotal 803.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal 804.role</Name>
+      <FullPath>Servitotal 804.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal 805.role</Name>
+      <FullPath>Servitotal 805.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Servitotal.role</Name>
+      <FullPath>Servitotal.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Solo Acceso Cubo Inventarios.role</Name>
+      <FullPath>Solo Acceso Cubo Inventarios.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Solo Opticas.role</Name>
+      <FullPath>Solo Opticas.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Solo PDV 14 Inventario.role</Name>
+      <FullPath>Solo PDV 14 Inventario.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tecnologia.role</Name>
+      <FullPath>Tecnologia.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ventas Institucionales.role</Name>
+      <FullPath>Ventas Institucionales.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DeploymentServerEdition>EnterpriseCore</DeploymentServerEdition>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

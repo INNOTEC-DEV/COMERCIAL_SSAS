@@ -1,0 +1,494 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DWH</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Clase</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Meses Promedio</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Almacen Fiscal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Área de Venta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ARTICULO INV</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Artículo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega Tipo Reclasificado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Campaña</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Cantidad Hijos Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Cantidad Inmuebles Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Clasificación Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Comisión Promotor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Comisión Vendedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Compañia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Civil Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Orden</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO REABASTECIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Día Despacho</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Documeto Importación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA EJECUCION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Entrega Apartado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA INGRESO BODEGA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha OC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Pedido</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Ultima Compra</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA ULTIMA TOMA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA ULTIMA VENTA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Vencimiento Apartado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Creación Documento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Forma de Pago</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Genero Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Hora Transacción</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Apartado Anulado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Iindicador Apartado Entregado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Baja Rotación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Compra Condicionada</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Estado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Extragarantía</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Home Delivery</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Institucional</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Interés</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Matriculada Tasa 0 Banco</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Matriculada Tasa 0 Unicomer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Orden Patronal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Pasa CEDI</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Plan Especial Vigente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Posee Carro</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Posee Casa</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Refinanciamiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Regalía</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Tarjeta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Venta Empleado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Venta Exonerada</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Venta Omnicanal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Venta Óptica</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LINEAS AUTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Mensualidad</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Moneda</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega Destino</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Bodega Origen</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LINEA DET MOVIMENTO INVENTARIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO DOCUMENTO INVENTARIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Nacionalidad Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Clasificación Nivel</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Excepciones</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Suspendido</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Nivel Inventario</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Inventario Seguridad</ID>
+      </Dimension>
+      <Dimension>
+        <ID>LeadTime</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Contenedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Documento IMP</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Documento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Embarque</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Factura IMP</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Orden</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Pedido</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ocupación Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Origen Transacción</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Otros Ingresos Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Plazo Extragarantía</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Plazo GarantíaOriginal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Plazo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Porcentaje Descuento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Promotor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Proveedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CLASE PEDIDO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD DIAS REABASTECIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Reabas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND REABASTECIMIENTO AUTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO PEDIDO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD USUARIO REABASTECIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Rotacion Bodega</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD COD CLASIFICACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD MESES SIN ROTACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO ROTACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ruta Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Salario Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Mercaderia Obsoleta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND PROCESO CAMBIO COSTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tasa Interés</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tienda</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Compra Embarque</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Compra Importación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo de Contrato</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Documento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Identificación Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Ingreso</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Movimiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Pago</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Venta Extragarantía</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Venta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ubicación Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ubicación Contenedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Vendedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ventas Emma</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim 180</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim 90</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim 120</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Plataforma de Terceros</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Remota - Nuevo Precio</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Remota - Precio Mínimo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Remota - Precio Normal</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Remota - Usuario Autoriza</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Remota - Usuario Solicita</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo de Autorización Remota</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Clasificación Desabastecimiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Shortage</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Shortage IABC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Clasificacíon IABC PDV</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Inventario</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>TH 80 20</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH MOVIMIENTOS INVENTARIO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH NIVEL INVENTARIO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH REABASTECIMIENTO INVENTARIO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH ROTACION</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH SALDOS INVENTARIO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Movimiento Inventario</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Movimiento Inventario 2</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Movimiento Inventario 1</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH IMPORTACIONES</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH ORDENES</ID>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Ventas</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>TH VENTAS</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO MENSUAL</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Ventas</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO MARGEN</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH VENTAS AA</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO CENTRO COSTO</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO VENDEDOR</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO CLASE</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO COMPANIA</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH PRESUPUESTO CADENA</ID>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
